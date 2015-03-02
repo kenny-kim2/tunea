@@ -13,23 +13,35 @@
 	Member m = dao.getMember(uid);
 	String msg = "";
 
-	if (m == null)
+	if (m == null){
 		msg = "회원이 존재하지 않습니다.";
-	else if (!m.getPw().equals(pwd))
+		request.setAttribute("msg", msg);
+	 	RequestDispatcher dispatcher = request
+				.getRequestDispatcher("login.jsp");
+	 	dispatcher.forward(request, response); 
+		
+	}
+	else if (!m.getPw().equals(pwd)){
 		msg = "비밀번호가 틀렸습니다.";
+		request.setAttribute("msg", msg);
+	 	RequestDispatcher dispatcher = request
+				.getRequestDispatcher("login.jsp");
+	 	dispatcher.forward(request, response); 
+	}
 	else {
 		session.setAttribute("uid", uid);
+		response.sendRedirect("../index.jsp");
 	}
 
 	if (!msg.equals("")) {
 		request.setAttribute("msg", msg);
-		RequestDispatcher dispatcher = request
+	 	RequestDispatcher dispatcher = request
 				.getRequestDispatcher("list.jsp");
 
-		dispatcher.forward(request, response);
+	 	dispatcher.forward(request, response); 
 	}
-	response.sendRedirect("../index.jsp");
-
+	
+	/* response.sendRedirect("../index.jsp"); */
 	/* System.out.println(m.getId());
 	System.out.println(m.getPw());
 	System.out.println(m.getName()); */
