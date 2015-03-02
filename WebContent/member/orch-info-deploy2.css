@@ -1,0 +1,42 @@
+﻿#body{
+position:relative;
+
+}
+
+
+#sub-menu {
+    position:absolute;
+   top:170px;
+}
+#main {
+    position: relative;
+    left: 270px;
+    padding-top:84px;
+   
+}
+#main-title-text {
+    position:absolute;
+    left:300px;
+    top:33px;
+}
+
+#content-container{
+	position:absolute;
+	top:450px;
+	left:195px;
+	width:800px;
+	height:400px;
+	
+}
+
+#body-main-container{
+    position:absolute;
+    left:195px;
+    top:87px;
+}
+
+#btn-container {
+    position:absolute;
+    top:850px;
+    left:357px;
+}

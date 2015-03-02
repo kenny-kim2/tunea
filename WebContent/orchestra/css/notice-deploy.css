@@ -1,0 +1,89 @@
+﻿
+/*--<헤더 영역>----------------------------------------------------------*/
+
+#logo
+{
+    position:absolute;
+    left:10px;
+    top:10px;
+    z-index:1;
+}
+
+#member-menu
+{
+    position:absolute;
+    right:42px;
+    top:40px;
+}
+
+/*--<메인 메뉴 영역>----------------------------------------------------------*/
+
+#main-menu-list
+{
+    position:absolute;
+    left:35px;
+    top:18px;
+}
+
+/*--<바디 영역>----------------------------------------------------------*/
+
+#sub-menu-title
+{
+    margin-top:100px;   
+    padding-left:22px;
+    padding-right:20px;    
+}
+
+#sub-menu-box
+{
+    margin-top:50px;
+    margin-left:20px;
+}
+
+#sub-menu-list
+{
+    position:absolute;
+    top:55px;
+    left:35px;
+}
+
+#sort-menu
+{
+    float:left;    
+    margin-top:15px;
+    margin-left:15px;
+}
+
+#search-form
+{
+    margin-top:15px;
+    margin-left:348px; 
+}
+
+#pager-container
+{
+    margin-top:20px;
+    padding-left:340px;
+}
+
+/*--<풋터 영역>--------------------------------------------------------*/
+
+#logo-footer-container 
+{
+    float:left;
+    padding-left:10px;   
+    margin-top:10px;
+}
+
+#company-info-container 
+{    
+    float:left;
+    margin-top:35px;
+    margin-left:200px;
+}
+
+#copyright
+{
+    margin-top:5px;
+    margin-left:90px;
+}

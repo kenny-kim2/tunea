@@ -1,0 +1,383 @@
+﻿
+
+
+ 
+
+#view-detail {
+  
+    font-size:12px;
+    font-weight:bold;
+    width:778px; 
+    padding-left:15px;
+    table-layout:fixed
+}
+
+.view-table-row {
+    height: 45px;
+    line-height: 45px;
+  }
+
+.view-table-cell {
+    display:table-cell;
+  }
+
+.top {  
+    display:inline-block;
+    border-top: 3px solid #cbb48b;
+    border-bottom: 3px solid #cbb48b;
+    margin-top:31px;
+    width:763px;
+    height:45px;
+    line-height:45px;
+    font-size:16px;
+    padding-left:15px;
+    
+    float:left;
+    position:relative;
+
+ }
+
+.view-detail-title {
+   
+    line-height:40px;
+    text-align: left;
+     width:33px;
+}
+
+.view-detail-aa {
+   
+    padding-left:15px;
+    padding-right:15px;
+
+}
+
+.view-detail-title-content {
+  width:420px;
+ 
+}
+.view-detail-writer {
+   width:49px;
+
+}
+
+.view-detail-date {
+   
+ width:31px;
+
+   
+  }
+
+.view-detail-cnt {
+
+  padding-right:15px;
+   
+  }
+
+
+.edit-menu {
+     
+       
+    line-height:20px;
+    text-align:right;
+    padding-right:10px;
+   
+}
+
+
+.edit-menu-list {
+     
+   display:inline-block;
+   font-weight:bold;
+   width:100%;
+    height:12px;
+   line-height:12px;
+     text-align:right;
+ }
+
+
+.edit-declare{
+    
+   margin-left:20px;
+     
+}
+
+.view-detail-content {
+ 
+   width:748px;
+    border:1px solid #cbb48b;
+   
+    border-radius:5px;
+    min-height: 300px;  
+    font-weight: lighter;
+    
+    margin-top:15px;   
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:15px;
+}
+
+
+/*=================<< 댓글 >>==============================================================================================*/
+#ripple {
+    margin:15px;
+    padding-top:15px;
+    padding-bottom:15px;
+
+    border-top:3px solid #cbb48b;
+    border-bottom:3px solid #cbb48b;
+    width:778px;
+    font-weight:bold;
+}
+
+.ripple-table {
+     margin-bottom:15px;
+     table-layout:fixed;
+     width:778px;
+}
+.ripple-table-cell {
+  position:relative;
+}
+.ripple-table-item{
+    float:left;
+}
+.ripple-writer {
+  padding-right:10px;
+ }
+
+.ripple-date {
+    
+    height:12px;
+  line-height:12px;  
+    padding-left:11px;
+    width:100%;
+ }
+
+
+.ripple-edit{
+  
+  position:absolute;
+  right:0px;
+     float:left;
+     width:25px;
+       height:12px;
+  line-height:12px;
+  padding-right:15px;
+ }
+
+
+
+.ripple-content{
+    margin-top:5px;
+     margin-left:44px;
+        padding:15px;
+      
+        width:702px;
+        height:40px;
+       
+        font-weight:lighter;
+       
+ }
+
+
+#ripple-register {    
+   height:34px;
+   line-height:34px;
+}
+
+
+#comment-name {
+    
+    width:42px;
+    float:left;
+    text-align:left;
+       
+}
+
+.comment-input {
+    width:655px;
+    height:32px;
+    margin-right:15px;    
+    float:left;
+  
+}
+
+
+
+
+.comment-button{
+     width:62px;
+    height:32px;
+    line-height:32px;
+    font-size:16px;
+    background:#cbb48b;
+    border: 1px solid #8e6844;
+    position:relative;    
+    color:#ffffff;
+      float:left;
+  }
+
+
+/*============<<목록>>===========================================================*/
+
+.bottom{
+   
+    width:62px;
+    height:32px;
+    line-height:32px;   
+      
+    text-align:center;     
+    background:#cbb48b;
+    border: 1px solid #8e6844;
+   
+    margin-bottom:15px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.bottom a {
+    font-family: NanumGothic, 고딕, sans-serif;
+    font-size:16px;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+
+#direction {
+    display:inline-block;
+   
+    width:778px;
+    height:12px;
+    line-height:12px;
+   font-weight:bold;
+    padding-left:15px;
+
+}
+
+#direction-prev {
+    width:389px;
+    float:left;
+}
+#direction-next {
+    width:389px;
+    float:left;
+    text-align:right;
+ }
+
+/*============<<목록 리스트>>===========================================================*/
+#view-list-table
+{
+    display:inline-block;
+    width:807px;
+    height:100%;
+    margin-top:5px;
+    padding-left:1px;     
+    position:relative;  
+}
+
+.view-cell-table
+{
+    width:265px;
+    height:265px;
+    float:left;
+    margin:2px;
+    table-layout:fixed;
+    background-color: rgba( 150, 150, 150, 0.2 );   
+    
+}
+
+.view-cell-row
+{
+    padding-left:20px;
+    padding-right:20px;     
+}
+
+
+.title
+{    
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align:left;
+    padding-top:20px;
+}
+
+.title a
+{
+    color: #8e6844;
+}
+
+.title a:hover
+{
+    text-decoration:underline;
+}
+
+.writer
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align:left;
+    text-indent:15px;
+    color: #2d2d2d; 
+    padding-top:5px;
+}
+
+.date
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align:right;
+    color: #2d2d2d; 
+    padding-top:5px;
+}
+
+.prev {
+    position:absolute;
+    top:113px;
+    left:15px;
+    z-index:1;
+}
+
+.next {
+    position:absolute;
+    top:113px;
+    right:15px;
+    z-index:1;
+}
+
+.content
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 12px;
+    text-indent:10px;
+    height:100px;
+    padding-top:50px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+ 
+}
+
+.hit
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align:left;
+    color: #2d2d2d; 
+    padding-top:12px;
+    padding-bottom:20px;
+}
+
+.repl
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align:right;
+    color: #2d2d2d; 
+    padding-top:12px;
+    padding-bottom:20px;
+}

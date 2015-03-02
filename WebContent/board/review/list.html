@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/bind.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="modernizr.js"></script>
+</head>
+<body>
+
+    <!----<헤더 영역>----------------------------------------------------------->
+
+    <header id="header">
+        <div class="content-wrapper">
+            <h1 id="logo"><a href="../../index.html"><img src="images/logo_brown.png" alt="튠에이" /></a></h1>
+            <section class="header-item-container">
+                <h1 class="hidden">머리말</h1>
+                <nav id="member-menu">
+                    <h1 class="hidden">회원 메뉴</h1>
+                    <ul class="clearfix">
+                        <li class="member-menu-item"><a class="member-menu-item-text" href="../../member/join.html">Join</a></li>
+                        <li class="member-menu-item"><a class="member-menu-item-text" href="../../member/Loin.html">Login</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+    <!----<메인 메뉴 영역>----------------------------------------------------------->
+
+    <aside id="main-menu">
+        <div class="content-wrapper">
+            <div class="main-menu-item-container">
+                <h2 class="hidden">메인 메뉴</h2>
+                <nav id="main-menu-list">
+                    <h3 class="hidden">메인 목록</h3>
+                    <ul class="clearfix">
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../../orchestra/list.html">Orchestra</a></li>
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../../concert/list.html">Concert</a></li>
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../../video/group_list.html">Video</a></li>
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../notice/list.html">Community</a></li>
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../../admin/tune_a.html">About us</a></li>
+                        <li class="main-menu-item-market"><a class="main-menu-item-text" href="">Market</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <!----<바디 영역>----------------------------------------------------------->
+
+    <div id="body">
+        <div class="content-wrapper clearfix">
+            <aside id="sub-menu">
+                <h1 id="sub-menu-title">Community</h1>
+                <nav id="sub-menu-list">
+                    <h2 class="hidden">서브 목록</h2>
+                    <ul>
+                        <li class="sub-menu-item"><a class="sub-menu-item-text" href="../notice/list.html">공지사항</a></li>
+                        <li class="sub-menu-item"><a class="sub-menu-item-text" href="../question/list.html">질의응답</a></li>
+                        <li class="sub-menu-item"><a class="sub-menu-item-text" href="../plan/list.html">공연기획</a></li>
+                        <li class="sub-menu-item"><a class="sub-menu-item-text" href="list.html">공연후기</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main id="main">
+                <h2 id="main-title">공연후기</h2>
+                <div id="sort-search-container">
+                    <div id="sort-menu">
+                        <h3 class="hidden">정렬 메뉴</h3>
+                        <nav class="sort-menu-list radius">
+                            <h3 class="hidden">정렬 목록</h3>
+                            <ul>
+                                <li class="sort-menu-item"><a class="sort-menu-item-text" href="">최신순</a></li>
+                                <li class="sort-menu-item"><a class="sort-menu-item-text" href="">인기순</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="search-container">
+                        <div class="search-form radius">
+                            <h3 class=" hidden">
+                            공지사항 찾기 검색 폼</h3>
+                            <form>
+                                <fieldset>
+                                    <legend class="hidden">공연후기 찾기 검색 필드</legend>
+                                    <label for="field" class="hidden">검색분류</label>
+                                    <select class="search-field radius" name="field">
+                                        <option>제목</option>
+                                        <option>내용</option>
+                                        <option>작성자</option>
+                                    </select>
+                                    <label for="district" class="hidden">게시판 검색</label>
+                                    <input class="search-input radius" type="text" name="district" />
+                                    <input class="search-button radius" type="submit" value="검색" />
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="notice-board">
+                    <h3 class="hidden">공연후기 목록</h3>
+                    <table id="notice-board-table">
+
+                        <tr class="notice-board-row">
+
+                            <td class="notice-board-cell">
+                                <div class="click" onclick="location.href='view.html'">
+                                    <ul>
+                                        <li class="content-item-top title"><a>애상말리지마 내 이런 사랑을 너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</a></li>
+                                        <li class="content-item-top writer"><a>작성자:강하림</a></li>
+                                        <li class="content-item-top date"><a>2015.1.31</a></li>
+                                        <li class="content-item-view view"><p>말리지마 내 이런 사랑을 sssssssssssssss너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</p></li>
+                                        <li class="content-item-cnt cnt"><a>조회수 : 300</a></li>
+                                        <li class="content-item-ripple ripple"><a>댓글 : 20</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+
+                            <td class="notice-board-cell">
+                                <div class="click" onclick="location.href='view.html'">
+                                    <ul>
+                                        <li class="content-item-top title"><a>애상말리지ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ마 내 이런 사랑을 너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</a></li>
+                                        <li class="content-item-top writer"><a>작성자:강하림</a></li>
+                                        <li class="content-item-top date"><a>2015.1.31</a></li>
+                                        <li class="content-item-view view"><p>말리지마 내 이런 사랑을 sssssssssssssss너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</p></li>
+                                        <li class="content-item-cnt cnt"><a>조회수 : 300</a></li>
+                                        <li class="content-item-ripple ripple"><a>댓글 : 20</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="notice-board-cell">
+                                <div class="click" onclick="location.href='view.html'">
+                                    <ul>
+                                        <li class="content-item-top title"><a>애상말리지마 내 이런 사랑을 너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</a></li>
+                                        <li class="content-item-top writer"><a>작성자:강하림</a></li>
+                                        <li class="content-item-top date"><a>2015.1.31</a></li>
+                                        <li class="content-item-view view"><p>말리지마 내 이런 사랑을 sssssssssssssss너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</p></li>
+                                        <li class="content-item-cnt cnt"><a>조회수 : 300</a></li>
+                                        <li class="content-item-ripple ripple"><a>댓글 : 20</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="notice-board-row">
+
+                            <td class="notice-board-cell">
+                                <div class="click" onclick="location.href='view.html'">
+                                    <ul>
+                                        <li class="content-item-top title"><a>애상말리지마 내 이런 사랑을 너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</a></li>
+                                        <li class="content-item-top writer"><a>작성자:강하림</a></li>
+                                        <li class="content-item-top date"><a>2015.1.31</a></li>
+                                        <li class="content-item-view view"><p>말리지마 내 이런 사랑을 sssssssssssssss너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</p></li>
+                                        <li class="content-item-cnt cnt"><a>조회수 : 300</a></li>
+                                        <li class="content-item-ripple ripple"><a>댓글 : 20</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+
+                            <td class="notice-board-cell">
+                                <div class="click" onclick="location.href='view.html'">
+                                    <ul>
+                                        <li class="content-item-top title"><a>애상말리지마 내 이런 사랑을 너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</a></li>
+                                        <li class="content-item-top writer"><a>작성자:강하림</a></li>
+                                        <li class="content-item-top date"><a>2015.1.31</a></li>
+                                        <li class="content-item-view view"><p>말리지마 내 이런 사랑을 sssssssssssssss너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</p></li>
+                                        <li class="content-item-cnt cnt"><a>조회수 : 300</a></li>
+                                        <li class="content-item-ripple ripple"><a>댓글 : 20</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="notice-board-cell">
+                                <div class="click" onclick="location.href='view.html'">
+                                    <ul>
+                                        <li class="content-item-top title"><a>애상말리지마 내 이런 사랑을 너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</a></li>
+                                        <li class="content-item-top writer"><a>작성자:강하림</a></li>
+                                        <li class="content-item-top date"><a>2015.1.31</a></li>
+                                        <li class="content-item-view view"><p>말리지마 내 이런 사랑을 sssssssssssssss너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</p></li>
+                                        <li class="content-item-cnt cnt"><a>조회수 : 300</a></li>
+                                        <li class="content-item-ripple ripple"><a>댓글 : 20</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="notice-board-row">
+
+                            <td class="notice-board-cell">
+                                <div class="click" onclick="location.href='view.html'">
+                                    <ul>
+                                        <li class="content-item-top title"><a>애상말리지마 내 이런 사랑을 너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</a></li>
+                                        <li class="content-item-top writer"><a>작성자:강하림</a></li>
+                                        <li class="content-item-top date"><a>2015.1.31</a></li>
+                                        <li class="content-item-view view"><p>말리지마 내 이런 사랑을 sssssssssssssss너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</p></li>
+                                        <li class="content-item-cnt cnt"><a>조회수 : 300</a></li>
+                                        <li class="content-item-ripple ripple"><a>댓글 : 20</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+
+                            <td class="notice-board-cell">
+                                <div class="click" onclick="location.href='view.html'">
+                                    <ul>
+                                        <li class="content-item-top title"><a>애상말리지마 내 이런 사랑을 너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</a></li>
+                                        <li class="content-item-top writer"><a>작성자:강하림</a></li>
+                                        <li class="content-item-top date"><a>2015.1.31</a></li>
+                                        <li class="content-item-view view"><p>말리지마 내 이런 사랑을 sssssssssssssss너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</p></li>
+                                        <li class="content-item-cnt cnt"><a>조회수 : 300</a></li>
+                                        <li class="content-item-ripple ripple"><a>댓글 : 20</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="notice-board-cell">
+                                <div class="click" onclick="location.href='view.html'">
+                                    <ul>
+                                        <li class="content-item-top title"><a>애상말리지마 내 이런 사랑을 너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</a></li>
+                                        <li class="content-item-top writer"><a>작성자:강하림</a></li>
+                                        <li class="content-item-top date"><a>2015.1.31</a></li>
+                                        <li class="content-item-view view"><p>말리지마 내 이런 사랑을 sssssssssssssss너만 보면 미칠 것 같은 이 맘을 누가 알겠어 웨딩드레스 입은 니 곁에 다른 사람이 알잖아 너를 이토록 사랑하며 기단린 나를 뭐가 그리 바쁜지 너무 보기 힘들어 넌 도대체 뭐하고 다니니 그게 ghfhfghfghf아냐 이유는 묻지마 그냥 믿고 기다려 주겠니 내게도 사랑을 위한 시간이 필요해 널 받아들일 수 있게</p></li>
+                                        <li class="content-item-cnt cnt"><a>조회수 : 300</a></li>
+                                        <li class="content-item-ripple ripple"><a>댓글 : 20</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+                <div id="pager-container">
+                    <div class="pager">
+                        <h3 class="hidden">페이저</h3>
+                        <p class="pager-item"><img src="images/btn-prev.png" alt="이전" /></p>
+                        <ul class="pager-list">
+                            <li class="pager-item"><a href="" class="text-highlight">1</a></li>
+                            <li class="pager-item"><a href="">2</a></li>
+                            <li class="pager-item"><a href="">3</a></li>
+                            <li class="pager-item"><a href="">4</a></li>
+                            <li class="pager-item"><a href="">5</a></li>
+                        </ul>
+                        <p class="pager-item"><img src="images/btn-next.png" alt="다음" /></p>
+                    </div>
+                </div>
+                <div class="write">
+                    <h3 class="hidden">글등록 메뉴</h3>
+                    <p class="write-item radius"><a href="write">글쓰기</a></p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!----<풋터 영역>----------------------------------------------------------->
+
+    <footer id="footer">
+        <div class="content-wrapper clearfix">
+            <div id="logo-footer-container">
+                <h2 id="logo-footer"><img src="images/logo-footer.png" alt="회사 정보" /></h2>
+            </div>
+            <div id="company-info-container">
+                <div id="company-info">
+                    <h3 class="hidden">소유자정보</h3>
+                    <dl class="clearfix">
+                        <dt class="company-info-item item-title item-newline">팀장</dt>
+                        <dd class="company-info-item item-data">김경현</dd>
+                        <dt class="company-info-item item-title item-newline">이메일</dt>
+                        <dd class="company-info-item item-data">kyunghyun96@naver.com</dd>
+                        <dt class="company-info-item item-title item-newline">전화번호</dt>
+                        <dd class="company-info-item item-data">010-2231-5935</dd>
+                    </dl>
+                </div>
+
+                <div id="copyright">
+                    <h3 class="hidden">저작권정보</h3>
+                    <p>Copyright@tune-A.com 2015 -....</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!----<퀵메뉴 영역>----------------------------------------------------------->
+    <!--<aside id="quick-menu">
+        <h1>QUICK MENU</h1>
+
+        <nav>
+            <h1>자주가는 메뉴</h1>
+            <ul>
+                <li>오케스트라 소개</li>
+                <li>공연 소개</li>
+                <li>공연 영상</li>
+                <li>게시판</li>
+            </ul>
+        </nav>
+
+        <nav>
+            <h1>스크롤 메뉴</h1>
+            <ul>
+                <li>맨 위로 △</li>
+                <li>아래로 ▽</li>
+            </ul>
+        </nav>
+    </aside>-->
+</body>
+</html>

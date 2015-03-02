@@ -1,0 +1,43 @@
+﻿#body{
+position:relative;
+
+}
+
+#sub-menu {
+    position:absolute;
+   top:170px;
+}
+
+#main {
+    position: relative;
+    left: 270px;
+    padding-top:84px;
+   
+}
+
+#body-title-container {
+
+    position:absolute;
+    left:354px;
+    top:33px;
+}
+
+#main-menu-container{
+    position:absolute;
+    left:195px;
+    top:106px;
+}
+
+#msg-container{
+    position:absolute;
+   left:260px;
+    top:350px;  
+}
+
+#btn-container {
+    position:absolute;
+    top:410px;
+    left:357px;
+}
+
+

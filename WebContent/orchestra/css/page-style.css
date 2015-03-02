@@ -1,0 +1,384 @@
+﻿
+/*--<공통 영역>----------------------------------------------------------*/
+
+body
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size : 12px;
+    color: #a0a0a0;
+    background:url("../images/bg.jpg") repeat fixed center top;
+}
+
+a
+{
+    color: #a0a0a0;
+    text-decoration:none;
+}
+
+.hidden
+{
+    display:none;
+}
+
+/*--<헤더 영역>----------------------------------------------------------*/
+
+#member-menu
+{
+    display:inline-block;
+}
+
+.member-menu-item
+{
+    float: left;       
+    padding-left: 24px;
+    background: url("../images/bg-vsp-gray-16.png") no-repeat 12px center;
+}
+
+.member-menu-item:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
+.member-menu-item-text
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #ffffff;   
+}
+
+.member-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+/*--<메인 메뉴 영역>----------------------------------------------------------*/
+
+#main-menu-list
+{    
+    display:inline-block;
+}
+
+.main-menu-item
+{
+    float:left;    
+    padding-left:37px;    
+    background:url("../images/bg-vsp-brown01-16.png") no-repeat 20px center;
+}
+
+.main-menu-item:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
+.main-menu-item-market
+{
+    float:left;    
+    padding-left:380px;    
+}
+
+.main-menu-item-text
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    color: #cbb48b;  
+}
+
+.main-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+/*--<바디 영역>----------------------------------------------------------*/
+
+#sub-menu-title 
+{    
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #646464;
+    text-align:center;        
+}
+
+#sub-menu-box
+{    
+    width:230px;
+    height:350px;
+    background-color: rgba( 255, 255, 255, 0.5 );
+    border-radius:5px;
+    float:left;
+}
+
+#sub-menu-list
+{
+    display:inline-block;  
+}
+
+.sub-menu-item
+{            
+    margin-top:40px;
+    text-align:center;   
+}
+
+.sub-menu-item-text
+{           
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #8e6844;    
+}
+
+.sub-menu-item-text:hover
+{
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+.selected .sub-menu-item-text
+{
+    color: #ffffff;    
+}
+
+#main-title
+{    
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    color: #2d2d2d;     
+    margin-top:30px;
+    text-align:center;       
+}
+
+.orch-intro-photo
+{
+    margin-top:15px;    
+    float:left;
+}
+
+.orch-intro-content
+{     
+    float:left;
+    margin-top:14px;    
+}
+
+.orch-intro-content-item
+{
+    margin-right:3px;
+    overflow:auto;    
+}
+
+.orch-intro-content p
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size:15px;
+    line-height:25px; 
+    text-indent:15px;
+    margin-top:15px;
+    margin-left:15px;
+    margin-right:12px;
+    margin-bottom:15px;    
+}
+
+#orch-info dd
+{       
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size:15px;     
+    line-height:20px;
+    overflow:hidden;  
+}
+
+#orch-info p
+{       
+    font-weight:bold; 
+    color:#646464;
+    text-indent:15px;
+}
+
+#notice-board
+{
+    float:left;
+    margin-top:15px;
+}
+
+#notice-board-title a
+{
+    display:inline-block;    
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    color:#646464;
+    margin-left:15px;    
+}
+
+#notice-board-title a:hover
+{
+    text-decoration:underline;
+}
+
+#board
+{
+    float:left;
+    margin-top:15px;
+}
+
+#board-title a
+{    
+    display:inline-block;    
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    color: #646464; 
+    margin-left:30px;   
+}
+
+#board-title a:hover
+{
+    text-decoration:underline;
+}
+
+#notice-board-table
+{    
+    margin-top:15px;     
+    table-layout:fixed;         
+}
+
+tbody .notice-board-row:hover
+{
+    /*color:#ffffff;
+    background-color: rgba( 150, 150, 150, 0.2 );*/
+    /*background:#e3dac9;*/
+    background:rgba(203, 180, 139, 0.3);
+}
+
+.notice-board-row
+{
+    height:30px;
+    line-height:30px;
+}
+
+.notice-board-cell
+{
+    text-align:center;
+    /*border-bottom:1px solid #e9e9e9;*/    
+}
+
+th.notice-board-cell
+{
+    background:url(../images/bg-vsp-gray-12.png) no-repeat left center;
+}
+
+th.notice-board-cell:first-child
+{
+    background:none;
+}
+
+#board-table
+{    
+    margin-top:15px;
+    margin-left:16px;
+    table-layout:fixed;   
+}
+
+tbody .board-row:hover
+{    
+    background:rgba(203, 180, 139, 0.3);
+}
+
+.board-row
+{
+    height:30px;
+    line-height:30px;   
+}
+
+.board-cell
+{
+    text-align:center;
+    /*border-bottom:1px solid #e9e9e9;*/    
+}
+
+th.board-cell
+{
+    background:url(../images/bg-vsp-gray-12.png) no-repeat left center;
+}
+
+th.board-cell:first-child
+{
+    background:none;
+}
+
+.title
+{     
+    text-indent:10px;   
+    width:256px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+/*th.title
+{
+    text-align:center;
+}*/
+
+.writer
+{
+    text-indent:10px; 
+    width:120px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.text-highlight
+{
+    font-weight:bold;
+    color:#ff6a00;
+}
+
+/*--<풋터 영역>--------------------------------------------------------*/
+
+#footer
+{
+    font-weight:bold;
+}
+
+.company-info-item
+{
+    float:left; 
+     
+}
+
+.item-title
+{
+    padding-left:20px;
+    background:url(../images/bg-vsp-gray-12.png) no-repeat 10px center;
+}
+
+.item-title:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
+.item-data
+{
+    padding-left:10px;
+    background:url(../images/footer-colon.png) no-repeat left center;
+}
+
+.item-newline
+{
+    clear:left;
+    padding-left:0px;
+    background:none;
+}
+
+
+
+
+
+
+

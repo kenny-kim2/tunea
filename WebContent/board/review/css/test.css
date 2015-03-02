@@ -1,0 +1,21 @@
+﻿#table {
+    margin-top:20px;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+
+.table-cell {
+    width:660px;
+    height: 200px;
+    background: #f5ebe9;
+}
+
+.table-content {
+    
+    height: 40px;
+    
+}
+
+
+

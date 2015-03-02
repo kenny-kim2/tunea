@@ -1,0 +1,129 @@
+﻿
+/*--<공통 영역>----------------------------------------------------------*/
+
+body
+{
+    font-family: NanumGothic, 고딕, sans-serif;
+    font-size : 12px;
+    color: #979797;
+    background:url("images/bg.jpg") no-repeat center;
+}
+
+a
+{
+    color: #979797;
+    text-decoration:none;
+}
+
+.hidden
+{
+    display:none;
+}
+
+/*--<헤더 영역>----------------------------------------------------------*/
+
+#member-menu
+{
+    display:inline-block;
+}
+
+.member-menu-item
+{
+    float: left;       
+    padding-left: 24px;
+    background: url("images/bg-member-menu-vsp.png") no-repeat 12px center;
+}
+
+.member-menu-item:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
+.member-menu-item-text
+{
+    font-family: NanumGothic, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #ffffff;   
+}
+
+.member-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+/*--<메인 메뉴 영역>----------------------------------------------------------*/
+
+#main-menu-list
+{    
+    display:inline-block;
+}
+
+.main-menu-item
+{
+    float:left;    
+    padding-left:37px;    
+    background:url("images/bg-main-menu-vsp.png") no-repeat 20px center;
+}
+
+.main-menu-item:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
+.main-menu-item-market
+{
+    float:left;    
+    padding-left:380px;    
+}
+
+.main-menu-item-text
+{
+    font-family: NanumGothic, 고딕, sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    color: #cbb48b;  
+}
+
+.main-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+/*--<바디 영역>----------------------------------------------------------*/
+
+
+
+/*--<풋터 영역>--------------------------------------------------------*/
+
+#footer
+{
+    font-weight:bold;
+}
+
+.company-info-item
+{
+    float:left;
+}
+
+.item-data
+{
+    padding-left:10px;
+    background:url("images/info-colon.png") no-repeat left center;
+}
+
+.item-newline
+{
+    clear:left;
+    padding-left:0px;
+    background:none;
+}
+
+
+
+
+
+
+

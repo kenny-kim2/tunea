@@ -1,0 +1,54 @@
+﻿/*--------------<Video Style>-------------------------*/
+
+.video-content-title-text {
+    font-family: NanumGothic, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/*---------------<ETC Style>--------------------------------*/
+
+/*----------------------------소속 오케스트라, 공연, 공연일정-------------------------------------->*/
+#etc {
+    /*font-family: NanumGothic;*/
+    font-size: 15px;
+}
+
+#etc h3{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.etc-list-info{
+    color:#000000;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.etc-list{
+    cursor:pointer;
+}
+
+/*----------------------------인기글 최신글-------------------------------*/
+
+#board h3{
+    font-size:18px;
+    font-weight:bold;
+}
+/*---------------<Board Style>--------------------------------*/
+
+
+.board-table{
+    font-size:15px;
+}
+.board-container tbody td{
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+
+.board-container tbody tr:hover{
+    background:rgba(203, 180, 139, 0.3);
+}
+

@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/list-layout.css" rel="stylesheet" type="text/css" />
+    <link href="../css/list-style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/list-deploy.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/modernizr.js">
+    </script>
+    <!--  <link href="css/normalize.css" rel="stylesheet" type="text/css"/> -->
+    <link href="../css/datepicker.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-1.8.18.custom.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $("#datepicker_1month").click(function () {
+
+                // Getter
+
+                /* 		var maxDate = $("#datepicker_next").datepicker( "option", "maxDate");
+                        var minDate = $("#datepicker_pre").datepicker( "option", "minDate"); */
+
+                nowdate = new Date();
+
+                if (nowdate.getMonth() == 0)
+                    var preDate = nowdate.getFullYear() + "-" + "12" + "-" + nowdate.getDate();
+                else
+                    var preDate = nowdate.getFullYear() + "-" + (nowdate.getMonth()) + "-" + nowdate.getDate();
+
+                var nextDate = nowdate.getFullYear() + "-" + (nowdate.getMonth() + 1) + "-" + nowdate.getDate();
+
+
+                // Setter
+                $("#datepicker_pre").val(preDate);
+                $("#datepicker_next").val(nextDate);
+
+
+            });
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datepicker_pre').datepicker({
+                inline: true,
+                //nextText: '&rarr;',
+                //prevText: '&larr;',
+                showOtherMonths: true,
+                changeYear: true,
+                changeMonth: true,
+                //dateFormat: 'dd MM yy',
+                dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+                //showOn: "button",
+                //buttonImage: "img/calendar-blue.png",
+                //buttonImageOnly: true,
+                //maxDate: '0d',
+                dateFormat: 'yy-mm-dd',
+                onClose: function (selectedDate) {
+
+                    $('#datepicker_next').datepicker("option", "minDate", selectedDate);
+
+                }
+
+
+            });
+        });
+
+        $(function () {
+            $('#datepicker_next').datepicker({
+                inline: true,
+                //nextText: '&rarr;',
+                //prevText: '&larr;',
+                showOtherMonths: true,
+                changeYear: true,
+                changeMonth: true,
+                //dateFormat: 'dd MM yy',
+                dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+                //showOn: "button",
+                //buttonImage: "img/calendar-blue.png",
+                //buttonImageOnly: true,
+                //maxDate: '+0d',
+                dateFormat: 'yy-mm-dd',
+
+                onClose: function (selectedDate) {
+
+                    /* var defaultDate = $( ".selector" ).datepicker( "option", "defaultDate" ); */
+
+                    $('#datepicker_pre').datepicker("option", "maxDate", selectedDate);
+
+
+                }
+
+
+
+
+
+            });
+        });
+
+
+
+
+    </script>
+
+
+    <script type="text/javascript">
+
+        $(function () {
+            $("#check_all").click(function () {
+                if ($("#check_all").prop("checked")) {
+                    $("input[type=checkbox]").prop("checked", true);
+                }
+                else {
+                    $("input[type=checkbox]").prop("checked", false);
+                }
+            })
+        })
+
+    </script>
+</head>
+<body>    
+
+<!----<헤더 영역>----------------------------------------------------------->
+
+    <header id="header">
+        <div class="content-wrapper">
+            <h1 id="logo"><a href="../index.html"><img src="images/logo_brown.png" alt="튠에이" /></a></h1>
+            <section class="header-item-container">
+                <h1 class="hidden">머리말</h1>
+                <nav id="member-menu">
+                    <h1 class="hidden">회원 메뉴</h1>
+                    <ul class="clearfix">
+                        <li class="member-menu-item"><a class="member-menu-item-text" href="../member/join.html">Join</a></li>
+                        <li class="member-menu-item"><a class="member-menu-item-text" href="../member/login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+<!----<메인 메뉴 영역>----------------------------------------------------------->
+
+        <aside id="main-menu">
+            <div class="content-wrapper">
+                <div class="main-menu-item-container">
+                    <h2 class="hidden">메인 메뉴</h2>
+                    <nav id="main-menu-list">
+                        <h3 class="hidden">메인 목록</h3>
+                        <ul class="clearfix">
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="../orchestra/list.html">Orchestra</a></li>
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="list.html">Concert</a></li>
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="../video/group_list.html">Video</a></li>
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="../board/freeboard/list.html">Community</a></li>
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="../admin/tune_a.html">About us</a></li>
+                            <li class="main-menu-item-market"><a class="main-menu-item-text" href="">Market</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+
+<!----<바디 영역>----------------------------------------------------------->
+
+        <div id="body">
+            <div class="content-wrapper clearfix">
+                <aside id="sub-menu">
+                    <h1 class="hidden">서브 메뉴</h1>
+                    <nav id="sub-menu-list">
+                        <h2 class="hidden">서브 목록</h2>
+                        <ul>
+                            <li class="sub-menu-item"><a class="sub-menu-item-text" href="list.html">Concert</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <main id="main">
+                    <h2 id="main-title">공연 찾기</h2>
+
+                    <div class="border-line"></div>
+
+                    <div id="search-container">
+
+                        <div id="concert-option">
+                            <ol id="concert-option-list">
+                                <li class="concert-option-cal">
+                                    <input style="width: 120px; height: 32px; background: none; border: 1px solid #8e6844; border-radius: 5px; cursor: pointer; border-radius: 5px; " type="button" id="datepicker_pre" value="날짜 선택" /> ~
+                                </li>
+                                <li class="concert-option-cal">
+                                    <input style="width: 120px; height: 32px; background: none; border: 1px solid #8e6844; cursor: pointer; border-radius: 5px; "  type="button" id="datepicker_next" value="날짜 선택" />
+                                </li>
+                            </ol>
+                        </div>
+
+
+                        <div id="concert-option-search">
+                            <div id="search-form">
+                                <h3 class="hidden">오케스트라 게시판 검색 폼</h3>
+                                <form>
+                                    <fieldset>
+                                        <legend class="hidden">오케스트라 게시판 검색 필드</legend>
+                                        <label for="field" class="hidden">검색분류</label>
+                                        <select class="search-field" name="field">
+                                            <option>서울</option>
+                                            <option>부산</option>
+                                            <option>대구</option>
+                                            <option>인천</option>
+                                            <option>광주</option>
+                                            <option>대전</option>
+                                            <option>울산</option>
+                                            <option>세종</option>
+                                            <option>경기</option>
+                                            <option>강원</option>
+                                            <option>충북</option>
+                                            <option>충남</option>
+                                            <option>전북</option>
+                                            <option>전남</option>
+                                            <option>경북</option>
+                                            <option>경남</option>
+                                            <option>제주</option>
+                                        </select>
+                                        <label for="district" class="hidden">지역검색</label>
+                                        <input class="search-input" type="text" name="district" />
+                                        <input class="search-button" type="submit" value="검색" />
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="concert-board">
+                        <table id="concert-board-table">
+                            <tr class="concert-board-table-row">
+                                <td class="concert-board-table-cell">
+                                    <a href="view.html">
+                                        <table class="concert-second-table">
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="orch-name"><p>베누스토 경인지부</p></div>
+                                                    <div class="orch-title"><p>2014년 정기연주회</p></div>
+                                                    <div class="orch-date"><p>2014년 12월 21일 (일) 오후 6시</p></div>
+                                                    <div class="orch-place"><p>부천시민회관 대공연장</p></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </td>
+
+                                <td class="concert-board-table-cell">
+                                    <a href="view.html">
+                                        <table class="concert-second-table">
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="orch-name"><p>베누스토 경인지부</p></div>
+                                                    <div class="orch-title"><p>2014년 정기연주회</p></div>
+                                                    <div class="orch-date"><p>2014년 12월 21일 (일) 오후 6시</p></div>
+                                                    <div class="orch-place"><p>부천시민회관 대공연장</p></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </td>
+
+                                <td class="concert-board-table-cell">
+                                    <a href="view.html">
+                                        <table class="concert-second-table">
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="orch-name"><p>베누스토 경인지부</p></div>
+                                                    <div class="orch-title"><p>2014년 정기연주회</p></div>
+                                                    <div class="orch-date"><p>2014년 12월 21일 (일) 오후 6시</p></div>
+                                                    <div class="orch-place"><p>부천시민회관 대공연장</p></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr class="concert-board-table-row">
+                                <td class="concert-board-table-cell">
+                                    <a href="view.html">
+                                        <table class="concert-second-table">
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="orch-name"><p>베누스토 경인지부</p></div>
+                                                    <div class="orch-title"><p>2014년 정기연주회</p></div>
+                                                    <div class="orch-date"><p>2014년 12월 21일 (일) 오후 6시</p></div>
+                                                    <div class="orch-place"><p>부천시민회관 대공연장</p></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </td>
+                                <td class="concert-board-table-cell">
+                                    <a href="view.html">
+                                        <table class="concert-second-table">
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="orch-name"><p>베누스토 경인지부</p></div>
+                                                    <div class="orch-title"><p>2014년 정기연주회</p></div>
+                                                    <div class="orch-date"><p>2014년 12월 21일 (일) 오후 6시</p></div>
+                                                    <div class="orch-place"><p>부천시민회관 대공연장</p></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </td>
+
+                                <td class="concert-board-table-cell">
+                                    <a href="view.html">
+                                        <table class="concert-second-table">
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="orch-name"><p>베누스토 경인지부</p></div>
+                                                    <div class="orch-title"><p>2014년 정기연주회</p></div>
+                                                    <div class="orch-date"><p>2014년 12월 21일 (일) 오후 6시</p></div>
+                                                    <div class="orch-place"><p>부천시민회관 대공연장</p></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr class="concert-board-table-row">
+                                <td class="concert-board-table-cell">
+                                    <a href="view.html">
+                                        <table class="concert-second-table">
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="orch-name"><p>베누스토 경인지부</p></div>
+                                                    <div class="orch-title"><p>2014년 정기연주회</p></div>
+                                                    <div class="orch-date"><p>2014년 12월 21일 (일) 오후 6시</p></div>
+                                                    <div class="orch-place"><p>부천시민회관 대공연장</p></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </td>
+
+                                <td class="concert-board-table-cell">
+                                    <a href="view.html">
+                                        <table class="concert-second-table">
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="orch-name"><p>베누스토 경인지부</p></div>
+                                                    <div class="orch-title"><p>2014년 정기연주회</p></div>
+                                                    <div class="orch-date"><p>2014년 12월 21일 (일) 오후 6시</p></div>
+                                                    <div class="orch-place"><p>부천시민회관 대공연장</p></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </td>
+
+                                <td class="concert-board-table-cell">
+                                    <a href="view.html">
+                                        <table class="concert-second-table">
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="orch-name"><p>베누스토 경인지부</p></div>
+                                                    <div class="orch-title"><p>2014년 정기연주회</p></div>
+                                                    <div class="orch-date"><p>2014년 12월 21일 (일) 오후 6시</p></div>
+                                                    <div class="orch-place"><p>부천시민회관 대공연장</p></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="pager-container">
+                        <div class="pager">
+                            <h3 class="hidden">페이저</h3>
+                            <p class="pager-item"><img src="images/btn-prev.png" alt="이전" /></p>
+                            <ul class="pager-list">
+                                <li class="pager-item"><a href="" class="text-highlight">1</a></li>
+                                <li class="pager-item"><a href="">2</a></li>
+                                <li class="pager-item"><a href="">3</a></li>
+                                <li class="pager-item"><a href="">4</a></li>
+                                <li class="pager-item"><a href="">5</a></li>
+                            </ul>
+                            <p class="pager-item"><img src="images/btn-next.png" alt="다음" /></p>
+                        </div>
+                    </div>
+                    <a href="write.html">
+                        <div class="request">
+                            <h3 class="hidden">등록 메뉴</h3>
+                            <p class="request-item">등록 신청</p>
+                        </div>
+                    </a>
+                </main>
+            </div>
+        </div>
+
+<!----<풋터 영역>----------------------------------------------------------->
+
+        <footer id="footer">
+            <div class="content-wrapper clearfix">
+                <div id="logo-footer-container">
+                    <h2 id="logo-footer"><img src="images/logo-footer.png" alt="회사 정보" /></h2>
+                </div>
+                <div id="company-info-container">
+                    <div id="company-info">
+                        <h3 class="hidden">소유자정보</h3>
+                        <dl class="clearfix">
+                            <dt class="company-info-item item-title item-newline">팀장</dt>
+                            <dd class="company-info-item item-data">김경현</dd>
+                            <dt class="company-info-item item-title item-newline">이메일</dt>
+                            <dd class="company-info-item item-data">kyunghyun96@naver.com</dd>
+                            <dt class="company-info-item item-title item-newline">전화번호</dt>
+                            <dd class="company-info-item item-data">010-2231-5935</dd>
+                        </dl>
+                    </div>
+
+                    <div id="copyright">
+                        <h3 class="hidden">저작권정보</h3>
+                        <p>Copyright@tune-A.com 2015 -....</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<!----<퀵메뉴 영역>----------------------------------------------------------->
+
+        <!--<aside id="quick-menu">
+            <h1>QUICK MENU</h1>
+
+            <nav>
+                <h1>자주가는 메뉴</h1>
+                <ul>
+                    <li>오케스트라 소개</li>
+                    <li>공연 소개</li>
+                    <li>공연 영상</li>
+                    <li>게시판</li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h1>스크롤 메뉴</h1>
+                <ul>
+                    <li>맨 위로 △</li>
+                    <li>아래로 ▽</li>
+                </ul>
+            </nav>
+        </aside>-->
+</body>
+</html>

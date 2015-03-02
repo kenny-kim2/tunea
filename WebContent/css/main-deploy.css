@@ -1,0 +1,98 @@
+﻿/*--------------<Video Deloy>-------------------------*/
+.video-content{
+    background:rgba(255, 255, 255, 0.7);
+}
+
+.video-content-title {
+    margin-top:10px;
+    text-align:center;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+
+.video-content-info{
+    margin-top:15px;
+    text-align:right;
+    margin-right:20px;
+    
+}
+
+.video-btn{
+    display:inline-block;
+    position:absolute;
+    top:470px;
+    
+    background:#3bdfe4;
+    width:10px;
+    height:10px;
+    border:5px solid #3bdfe4;
+    border-radius:10px;
+    z-index:1;
+
+    cursor:pointer;
+}
+.video-btn:hover{
+    border:5px solid #000000;
+    
+    cursor:pointer;
+}
+.video-btn-1{
+    left:10px;
+}
+.video-btn-2{
+    left:50px;
+}
+.video-btn-3{
+    left:90px;
+}
+
+.video-btn:{
+    border:5px solid #000000;
+}
+.video-btn-1:focus ~ .video-list{
+    left:0px;
+}
+.video-btn-2:focus ~ .video-list{
+    left:-1080px;
+}
+.video-btn-3:focus ~ .video-list{
+    left:-2160px;
+}
+/*---------------<ETC Deloy>--------------------------------*/
+
+/*------------------소속 오케스트라, 공연, 공연일정----------------------------------*/
+
+#etc{
+    border-top: 3px solid #cbb48b;
+}
+
+.etc-list-title{
+    padding-top:20px;
+    text-align:center;
+}
+
+.etc-list-content {
+    padding-top:40px;
+    padding-left:5px;
+    line-height:25px;
+}
+
+
+/*------------------------인기글, 최신글---------------------------------*/
+
+#board{
+    border-top: 3px solid #cbb48b;
+}
+
+.board-title{
+    width:311px;
+    text-align:center;
+}
+.board-writer{
+    width:100px;
+    text-align:center;
+}
+.board-regdate{
+    width:100px;
+    text-align:center;
+}

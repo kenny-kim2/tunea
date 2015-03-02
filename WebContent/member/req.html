@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="basic-list-layout(side).css" rel="stylesheet" type="text/css" />
+    <link href="basic-list-style.css" rel="stylesheet" type="text/css" />
+    <link href="basic-list-deploy.css" rel="stylesheet" type="text/css" />
+    <link href="req-deploy.css" rel="stylesheet" type="text/css" />
+    <link href="req-style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="modernizr.js"></script>
+    <title>
+        Tune-A
+    </title>
+</head>
+<body>
+    <!----<헤더 영역>----------------------------------------------------------->
+
+    <header id="header">
+        <div class="content-wrapper">
+            <h1 id="logo">
+                <a href="../index.html">
+                    <img src="images/logo_brown.png" alt="튠에이" />
+                </a>
+            </h1>
+            <section class="header-item-container">
+                <h1 class="hidden">머리말</h1>
+                <nav id="member-menu">
+                    <h1 class="hidden">회원 메뉴</h1>
+                    <ul class="clearfix">
+                        <li class="member-menu-item"><a class="member-menu-item-text" href="join.html">Join</a></li>
+                        <li class="member-menu-item"><a class="member-menu-item-text" href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+    <!----<메인 메뉴 영역>----------------------------------------------------------->
+
+    <aside id="main-menu">
+        <div class="content-wrapper">
+            <div class="main-menu-item-container">
+                <h2 class="hidden">메인 메뉴</h2>
+                <nav id="main-menu-list">
+                    <h3 class="hidden">메인 목록</h3>
+                    <ul class="clearfix">
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../orchestra/list.html">Orchestra</a></li>
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../concert/list.html">Concert</a></li>
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../video/group_list.html">Video</a></li>
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../board/freeboard/list.html">Community</a></li>
+                        <li class="main-menu-item"><a class="main-menu-item-text" href="../admin/tune_a.html">About us</a></li>
+                        <li class="main-menu-item-market"><a class="main-menu-item-text" href="">Market</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </aside>
+    <!----<바디 영역>----------------------------------------------------------->
+    <div id="body">
+        <div class="content-wrapper clearfix">
+      
+                <aside id="sub-menu">
+                    <h1 class="hidden">사이드 메뉴</h1>
+                    <nav>
+                        <h1 class="hidden">정보 수정 및 오케스트라 등록</h1>
+                        <ul>
+                            <li class="side-menu-item"><a class="side-menu-item-text" href="info.html">정보 수정</a></li>
+                            <li class="side-menu-item"><a class="side-menu-item-text" href="req.html">오케스트라 등록</a></li>
+                        </ul>
+                    </nav>
+
+                </aside>
+
+                <main id="main">
+                    <section>
+                        <div id="body-title-container">
+                          <h1 id="body-title">오케스트라 등록</h1>
+                        </div>
+                            <h2 class="hidden">오케스트라 등록정보 폼</h2>
+                            <form id="main-form">
+                                <fieldset id="body-item">
+                                    
+                                    <legend class="hidden">오케스트라 등록 필드</legend>
+                                    <div id="main-menu-container">
+                                        <div class="body-main-item-list">
+                                            <label class="body-item-text" for=" orch_Name">오케스트라 이름</label>
+                                            <br />
+                                            <input class="body-item-textbox" type="text" name="orch_Name" />
+                                           
+                                            </div>
+                                        <br />
+                                        <div class="body-main-item-list">
+                                            <label class="body-item-text" for=" capName">대표자 이름　</label>
+                                            <br />
+                                            <input class="body-item-textbox" type="text" name="capName" />
+                                            </div>
+                                            <br />
+                                        <div class="body-main-item-list">
+                                            <label class="body-item-text" for=" phoneNum">연　락　처 　</label>
+                                            <br />
+                                            <input class="body-item-textbox" type="text" name="phoneNum" />
+                                            </div>
+                                            <br />
+                                        </div>
+                                    <div id="btn-container">
+                                    <input id="body-item-btn" type="submit" value="신청" />
+                                   </div>
+                                   </fieldset>
+                            </form>
+                        
+                        <div id="msg-container">
+                            <h2 class="hidden">오케스트라 등록 공고</h2>
+                            <p class="msg-text">오케스트라 단체장의 아이디로 등록을 해주시기 바랍니다.</p>
+                            <p class="msg-text">이후 오케스트라 단체장의 권한을 위임할 수 있습니다.</p>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+                <!----<풋터 영역>----------------------------------------------------------->
+
+                <footer id="footer">
+                    <div class="content-wrapper clearfix">
+                        <div id="logo-footer-container">
+                            <h2 id="logo-footer">
+                                <img src="images/logo-footer.png" alt="회사 정보" />
+                            </h2>
+                        </div>
+                        <div id="company-info-container">
+                            <div id="company-info">
+                                <h3 class="hidden">소유자정보</h3>
+                                <dl class="clearfix">
+                                    <dt class="company-info-item item-title item-newline">팀장</dt>
+                                    <dd class="company-info-item item-data">김경현</dd>
+                                    <dt class="company-info-item item-title item-newline">이메일</dt>
+                                    <dd class="company-info-item item-data">kyunghyun96@naver.com</dd>
+                                    <dt class="company-info-item item-title item-newline">전화번호</dt>
+                                    <dd class="company-info-item item-data">010-2231-5935</dd>
+                                </dl>
+                            </div>
+
+                            <div id="copyright">
+                                <h3 class="hidden">저작권정보</h3>
+                                <p>Copyright@tune-A.com 2015 -....</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <!--<aside>
+            <h1>QUICK MENU</h1>
+            <nav>
+                <h1>자주가는 메뉴</h1>
+                <ul>
+                    <li>오케스트라 소개</li>
+                    <li>공연 소개</li>
+                    <li>공연 영상</li>
+                    <li>게시판</li>
+                </ul>
+            </nav>
+            <nav>
+                <h1>스크롤 메뉴</h1>
+                <p>top</p>
+                <p>bottom</p>
+            </nav>
+        </aside>-->
+</body>
+</html>

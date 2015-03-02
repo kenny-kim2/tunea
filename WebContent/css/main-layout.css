@@ -1,0 +1,163 @@
+﻿/*--------------<Video Layout>-------------------------*/
+
+.video {
+    width: 100%;
+    height: 500px;
+    position:relative;
+}
+
+.video-content{
+    display:inline-block;
+    margin-left:680px;
+    margin-top:420px;
+    width:400px;
+    height:80px;
+}
+.video-list{
+    width:5000px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    display:inline-block;
+    transition:all 1s ease-in;
+}
+.video-item{
+    width: 1080px;
+    height:500px;
+    cursor:pointer;
+    float:left;
+}
+
+/*---------------<ETC Layout>--------------------------------*/
+
+.rmargin15{
+    margin-right:15px;
+}
+.lmargin{
+    margin-left:15px;
+}
+.rmargin16{
+    margin-right:16px;
+}
+
+/*------------------------인기글, 최신글---------------------------------*/
+
+#board{
+    margin-top:15px;
+    margin-left:15px;
+    width:1050px;
+}
+
+#board h3{
+    margin-top:18px;
+    margin-left:15px;
+}
+
+.board-table{
+    float:left;
+}
+
+.board-container{
+    border:3px solid #cbb48b;    
+    width:517px;
+    margin-top:18px;
+    height:239px;
+    table-layout:fixed;
+}
+
+
+/*------------------소속 오케스트라, 공연, 공연일정----------------------------------*/
+
+#etc{
+    display:inline-block;
+    margin-top:15px;
+    margin-left:15px; 
+}
+#etc h3{
+    margin-top:18px;
+    margin-left:15px;
+}
+.etc-table{
+    float:left;
+}
+
+.etc-list{
+    margin-top:18px;
+    border:3px solid #cbb48b;
+    width:334px;
+    height:290px;
+    overflow:hidden;
+}
+
+/*.etc-list-info{
+    margin-top:210px;
+    width:100%;
+    height:290px;
+    background:rgba(255, 255, 255, 0.5);
+    }
+*/
+
+    /*transition:1s;*/
+
+
+/*.etc-list-info:hover{
+    margin-top:0px;
+}*/
+
+
+
+.etc-list .etc-list-info {
+   background-color: rgba(255, 255, 255, 0.7);
+   margin-top: 0px;
+   height:290px;
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-out 0.5s;
+   -moz-transition: all 0.3s ease-out 0.5s;
+   -o-transition: all 0.3s ease-out 0.5s;
+   -ms-transition: all 0.3s ease-out 0.5s;
+   transition: all 0.3s ease-out 0.5s;
+}
+
+.etc-list:hover .etc-list-info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   margin-top: 0px;
+   height:290px;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+   -webkit-animation: bounceY 0.9s linear;
+   -moz-animation: bounceY 0.9s linear;
+   -ms-animation: bounceY 0.9s linear;
+   animation: bounceY 0.9s linear;
+}
+
+@keyframes bounceY {
+    0% { transform: translateY(-205px);}
+    40% { transform: translateY(-100px);}
+    65% { transform: translateY(-52px);}
+    82% { transform: translateY(-25px);}
+    92% { transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
+}
+@-moz-keyframes bounceY {
+    0% { -moz-transform: translateY(-205px);}
+    40% { -moz-transform: translateY(-100px);}
+    65% { -moz-transform: translateY(-52px);}
+    82% { -moz-transform: translateY(-25px);}
+    92% { -moz-transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { -moz-transform: translateY(0px);}
+}
+@-webkit-keyframes bounceY {
+    0% { -webkit-transform: translateY(-205px);}
+    40% { -webkit-transform: translateY(-100px);}
+    65% { -webkit-transform: translateY(-52px);}
+    82% { -webkit-transform: translateY(-25px);}
+    92% { -webkit-transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { -webkit-transform: translateY(0px);}
+}

@@ -1,0 +1,172 @@
+﻿
+/*--<헤더 영역>----------------------------------------------------------*/
+
+#header
+{   
+    height:100px;
+}
+
+#header .content-wrapper
+{
+    position: relative;
+    background:#2d2d2d;
+}
+
+.header-item-container 
+{
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/*--<메인 메뉴 영역>----------------------------------------------------------*/
+
+#main-menu .content-wrapper
+{
+    position: relative;
+    border-top:3px solid #cbb48b;
+    border-bottom:3px solid #cbb48b;
+    height:60px;
+    background:#8e6844;
+}
+
+.main-menu-item-container
+{
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/*--<바디 영역>----------------------------------------------------------*/
+
+#body
+{    
+    min-height:770px;        
+}
+
+#body .content-wrapper
+{    
+    background:#e3dac9
+}
+
+#sub-menu
+{
+    min-height:inherit;
+    width:270px;    
+    float:left;
+}
+
+#sub-menu-box
+{
+    position:relative;
+}
+
+#main
+{
+    min-height:inherit;
+    width:810px;    
+    float:left;
+    padding-bottom:20px;
+    background:#ffffff; 
+}
+
+#orch-item
+{
+    border-top:3px solid #cbb48b;
+    height:1277px;
+    width:780px;       
+}
+
+#orch-intro
+{
+    width:515px;    
+    float:left;    
+}
+
+.orch-intro-content
+{
+    width:513px;
+    height:458px;
+    border:1px solid #cbb48b;
+    border-radius:5px;
+    background-color: rgba( 200, 200, 200, 0.1 );    
+}
+
+.orch-intro-content-item
+{
+    max-height:100%;
+}
+
+#orch-info
+{
+    width:265px;    
+    float:left;    
+}
+
+#orch-info dd
+{
+    height:107px;
+    width:250px;
+}
+
+#board-menu
+{
+    border-top:3px solid #cbb48b;
+    height:285px;
+    width:780px;    
+}
+
+#notice-board-table
+{    
+    width:382px;
+    height:240px;
+    border:3px solid #cbb48b;
+    background-color: rgba( 200, 200, 200, 0.1 );
+    /*-webkit-box-shadow:1px 1px 5px #aaa;*/
+}
+
+#board-table
+{
+    width:382px;
+    height:240px;
+    border:3px solid #cbb48b;
+    background-color: rgba( 200, 200, 200, 0.1 );
+}
+
+/*--<풋터 영역>--------------------------------------------------------*/
+
+#footer
+{
+    background:#2d2d2d;
+    height:100px;
+}
+
+/*#footer .content-wrapper
+{
+    background:#2d2d2d;
+}*/
+
+/*--<공통 영역>----------------------------------------------------------*/
+
+.content-wrapper
+{
+    width:1080px;    
+    height:inherit;
+    min-height:inherit;
+    margin-left:auto;
+    margin-right:auto;    
+}
+
+.clearfix:after
+{
+    content:" "; 
+    display:block;
+    clear:both;
+    visibility:hidden;
+    height:0px;
+    line-height:0px;    
+}

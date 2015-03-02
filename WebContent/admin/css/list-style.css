@@ -1,0 +1,708 @@
+﻿
+/*--<공통 영역>----------------------------------------------------------*/
+
+body
+{
+    font-family:맑은 고딕, 고딕, sans-serif;
+    font-size : 12px;
+    color: #979797;
+    background:url("images/bg.jpg") no-repeat center;
+}
+
+a
+{
+    color: #979797;
+    text-decoration:none;
+}
+
+.hidden
+{
+    display:none;
+}
+
+/*--<헤더 영역>----------------------------------------------------------*/
+
+#member-menu
+{
+    display:inline-block;
+}
+
+.member-menu-item
+{
+    float: left;       
+    padding-left: 24px;
+    background: url("images/bg-member-menu-vsp.png") no-repeat 12px center;
+}
+
+.member-menu-item:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
+.member-menu-item-text
+{
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #ffffff;   
+}
+
+.member-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+/*--<메인 메뉴 영역>----------------------------------------------------------*/
+
+#main-menu-list
+{    
+    display:inline-block;
+}
+
+.main-menu-item
+{
+    float:left;    
+    padding-left:37px;    
+    background:url("images/bg-main-menu-vsp.png") no-repeat 20px center;
+}
+
+.main-menu-item:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
+.main-menu-item-market
+{
+    float:left;    
+    padding-left:380px;    
+}
+
+.main-menu-item-text
+{
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    color: #cbb48b;  
+}
+
+.main-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+/*--<바디 영역>----------------------------------------------------------*/
+
+
+#sub-menu-title 
+{
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #313131;
+    text-align:center;              
+}
+
+#sub-menu-title:hover
+{
+    text-decoration:underline;
+}
+
+#sub-menu-box
+{    
+    width:230px;
+    height:350px;
+    background-color: rgba( 0, 0, 0, 0.1 );
+    border-radius:15px;    
+}
+
+
+
+.sub-menu-item
+{        
+    margin-top:40px;
+    text-align:center;    
+}
+
+.sub-menu-item-text
+{           
+    font-family: NanumGothic, 맑은 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #8e6844;    
+}
+
+.sub-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+#main-title
+{
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size:30px;
+    font-weight: bold;
+    color: #313131; 
+    margin-top:30px;
+    /*padding-left:320px;*/   
+    /*background:yellow;*/
+    text-align:center;
+}
+
+#search-form
+{
+    display:inline-block;
+    margin-top:30px;
+    padding-left:150px;
+}
+
+.search-field
+{ 
+    width:70px;
+    height:35px;
+    font-size:20px;
+    border:1px solid #313131;
+}
+
+.search-input
+{
+    width:400px;
+    height:33px;
+    font-size:20px;
+    border:1px solid #313131;
+}
+
+.search-button
+{
+    width:35px;
+    height:35px;
+    font-size:20px;
+    background:url("images/btn-zoom.png") no-repeat center;
+    border:1px solid #313131;
+    text-indent:-999px;
+    overflow:hidden;      
+    cursor:pointer;  
+}
+
+.pager
+{
+    display:inline-block;
+}
+
+.pager-list
+{
+    float:left;
+}
+
+.pager-item
+{
+    float:left;
+    font-size: 15px;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+}
+
+.pager-item a:hover
+{
+    text-decoration:underline;
+}
+
+.text-highlight
+{
+    font-weight:bold;
+    color:#ff6a00;
+}
+
+.request
+{
+    width:110px;
+    height:28px;     
+    margin-top:20px;
+    margin-left:630px;
+    border:2px solid #cbb48b;
+    border-radius:6px;
+}
+/*.request-item a
+{
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+    padding-left:11px;
+  
+}*/
+
+/*--<풋터 영역>--------------------------------------------------------*/
+
+#footer
+{
+    font-weight:bold;
+}
+
+.company-info-item
+{
+    float:left;
+}
+
+.item-data
+{
+    padding-left:10px;
+    background:url("images/info-colon.png") no-repeat left center;
+}
+
+.item-newline
+{
+    clear:left;
+    padding-left:0px;
+    background:none;
+}
+/*--------------------------------------------------메인 테이블설정*/
+
+
+#message-option
+{
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height:30px;
+    margin-top:35px;
+    margin-bottom:35px;
+    text-align:right;
+    /*background:yellow;*/
+}
+.message-option-item
+{
+    float:left;
+    padding-left:5px;
+    margin-right:300px;
+}
+
+.message-option-cal
+{
+    float:left;
+    padding-left:5px;
+    
+ 
+}
+
+/*.message-option-cal
+{
+   background:url("images/cal.png") no-repeat  left center;
+   z-index:1001;
+    
+ 
+}*/
+
+#request-option
+{
+   
+    margin-left:600px;
+  
+   
+}
+
+.request-item 
+{
+     float:left;
+     font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+
+    border:2px solid #cbb48b;
+    border-radius:6px;
+    margin-right:20px;
+    padding:7px;
+  
+}
+
+/*===============list_회원탈퇴======================*/
+
+#main-form
+{
+    text-align:center;
+     width:100%;
+  
+     padding-top:200px;
+     padding-left:150px;
+} 
+
+#info-edit
+{
+      font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+    float:left;
+}
+
+#info-edit-text
+{
+    float:left;
+    height:30px;
+    width:300px;
+    margin-left:20px;
+
+    border:2px solid #cbb48b;
+    border-radius:3px;
+}
+
+.info-edit-button
+{   
+    float:left;
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #313131;
+
+     border:2px solid #cbb48b;
+    border-radius:6px;
+    margin-left:20px;
+    padding:7px;
+
+}
+
+/*=================================회원가입======================*/
+
+#main-join 
+{
+margin-top:100px;
+}
+
+
+#main-join .clearfix
+{
+ padding-top:20px;
+ padding-left:20px;
+}
+#main-join-title
+{
+      font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+    float:left;
+    height:30px;
+    line-height:30px;
+   width:150px;
+
+  
+}
+
+#main-join-title-gender
+{
+      font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+    float:left;
+    height:30px;
+    line-height:30px;
+  
+  
+}
+
+#main-join-text
+{
+     float:left;
+    height:30px;
+    width:300px;
+
+    border:2px solid #cbb48b;
+    border-radius:3px;
+}
+
+#main-name-text
+{
+     float:left;
+    height:30px;
+    width:150px;
+
+    border:2px solid #cbb48b;
+    border-radius:3px;
+}
+
+#main-name-address
+{
+     float:left;
+    height:30px;
+    width:600px;
+
+    border:2px solid #cbb48b;
+    border-radius:3px;
+}
+
+#main-join-button
+{   
+    float:left;
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #313131;
+
+     border:2px solid #cbb48b;
+    border-radius:6px;
+    margin-left:20px;
+    padding:7px;
+
+}
+
+.main-newline
+{
+    clear:left;
+    padding-left:0px;
+    background:none;
+}
+
+#main-join-final
+{
+    
+    float:left;
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #313131;
+
+     border:2px solid #cbb48b;
+    border-radius:6px;
+    margin-left:500px;
+    padding:7px;
+}
+
+/*==============================오케스트라 등록페이지========*/
+
+
+
+#orch-name
+{
+    padding-left:20px;
+    padding-right:20px;
+       font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #313131;
+    float:left;
+    padding-top:50px;
+  
+}
+
+#orch-welcome
+{
+    padding-top:10px;
+       font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+    float:left;
+    height:30px;
+    line-height:30px;
+    padding-left:20px;
+    padding-right:20px;
+
+}
+
+#main-orch-join-button
+{   
+   padding-top:200px;
+   padding-left:600px;
+ 
+   
+
+}
+
+.main-orch-join
+{   
+    width:100px;
+    text-align:center;
+   padding-top:10px;
+     float:left;
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #313131;
+
+     border:2px solid #cbb48b;
+    border-radius:6px;
+
+ 
+   
+
+}
+.orch-newline
+{
+    clear:left;
+    padding-left:0px;
+    background:none;
+}
+/*======================================로그인==================================*/
+
+#main-login
+{
+    padding-top:50px;
+}
+
+
+#main-login .clearfix
+{
+     padding-top:20px;
+ padding-left:20px;
+}
+
+#login-title
+{
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+    float:left;
+    height:30px;
+    line-height:30px;
+   width:150px;
+}
+
+#login-text
+{
+     float:left;
+    height:30px;
+    width:300px;
+
+     border:2px solid #cbb48b;
+    border-radius:3px;
+}
+
+#login-button
+{
+
+     float:left;
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #313131;
+
+     border:2px solid #cbb48b;
+    border-radius:6px;
+    margin-left:20px;
+    padding:7px;
+}
+#login-option
+{
+    padding-top:20px;
+    padding-left:150px;
+}
+
+#login-option-button
+{
+     float:left;
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #313131;
+
+     border:2px solid #cbb48b;
+    border-radius:6px;
+    margin-left:20px;
+    padding:7px;
+}
+
+/*============================================마이페이지 접속=========================*/
+
+#mypage-join
+{
+      font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+    float:left;
+}
+
+#mypage-join-text
+{
+    float:left;
+    height:30px;
+    width:300px;
+    display:inline-block;
+    margin-left:20px;
+
+     border:2px solid #cbb48b;
+    border-radius:3px;
+}
+
+.mypage-join-button
+{   
+    float:left;
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #313131;
+
+     border:2px solid #cbb48b;
+    border-radius:6px;
+    margin-left:20px;
+    padding:7px;
+  
+}
+
+/*================================PW/ID찾기 페이지===========================*/
+
+
+#idpwsearch
+{
+      text-align:center;
+}
+
+#main-login
+{
+    padding-top:50px;
+  
+}
+
+
+
+#main-idsearch .clearfix
+{
+     padding-top:20px;
+ padding-left:20px;
+
+}
+
+#id-search-title
+{
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+    float:left;
+    height:30px;
+    line-height:30px;
+   width:150px;
+   margin-left:100px;
+
+}
+
+#id-search-text
+{
+     float:left;
+    height:30px;
+    width:300px;
+
+     border:2px solid #cbb48b;
+    border-radius:3px;
+}
+
+#id-search-button
+{
+
+     float:left;
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #313131;
+
+     border:2px solid #cbb48b;
+    border-radius:6px;
+    margin-left:20px;
+    padding:7px;
+}

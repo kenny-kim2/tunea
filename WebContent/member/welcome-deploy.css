@@ -1,0 +1,16 @@
+﻿#main {
+    position: relative;
+}
+
+
+#msg-container {
+    position: absolute;
+    top: 100px;
+    left:383px;
+}
+
+#btn-container {
+    position:absolute;
+    left:490px;
+    top:250px;
+}

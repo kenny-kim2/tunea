@@ -1,0 +1,37 @@
+﻿.main-text {
+    font-size: 15px;
+    font-weight: bold;
+   
+    padding-top: 20px;
+    color:#313131;
+}
+
+
+#main{
+    text-align:center;
+    width:400px;
+    height:200px;
+    
+}
+.hidden {
+    display: none;
+}
+
+#login-btn {
+    text-decoration:none;
+    padding:5px;
+      width:100px;
+    height:50px;
+    color:#313131;
+     
+     background:#ffffff;
+    border-radius:7px 6px;
+    border:3px solid #8e6844;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#btn-container {
+      margin-top:30px;
+}

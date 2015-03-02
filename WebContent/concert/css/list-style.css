@@ -1,0 +1,426 @@
+﻿
+/*--<공통 영역>----------------------------------------------------------*/
+
+body
+{
+    font-family: NanumGothic;
+    font-size : 12px;
+    color: #979797;
+    background:url("../images/bg.jpg") repeat-y center;
+}
+
+a
+{
+    color: #979797;
+    text-decoration:none;
+}
+
+.hidden
+{
+    display:none;
+}
+
+/*--<헤더 영역>----------------------------------------------------------*/
+
+#member-menu
+{
+    display:inline-block;
+}
+
+.member-menu-item
+{
+    float: left;       
+    padding-left: 24px;
+    background: url("../images/bg-member-menu-vsp.png") no-repeat 12px center;
+}
+
+.member-menu-item:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
+.member-menu-item-text
+{
+    font-family: NanumGothic;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #ffffff;   
+}
+
+.member-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+/*--<메인 메뉴 영역>----------------------------------------------------------*/
+
+#main-menu-list
+{    
+    display:inline-block;
+}
+
+.main-menu-item
+{
+    float:left;    
+    padding-left:37px;    
+    background:url("../images/bg-main-menu-vsp.png") no-repeat 20px center;
+}
+
+.main-menu-item:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
+.main-menu-item-market
+{
+    float:left;    
+    padding-left:380px;    
+}
+
+.main-menu-item-text
+{
+    font-family: NanumGothic;
+    font-size:20px;
+    font-weight: bold;
+    color: #cbb48b;  
+}
+
+.main-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+/*--<바디 영역>----------------------------------------------------------*/
+
+.sub-menu-item-text
+{
+    font-family: NanumGothic;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #313131; 
+    padding-left: 13px;        
+}
+
+.sub-menu-item-text:hover
+{
+    text-decoration:underline;
+}
+
+#main-title
+{
+    font-family: NanumGothic;
+    font-size:20px;
+    font-weight: bold;
+    color: #313131; 
+    margin-top:30px;
+    text-align:center;  
+}
+
+.border-line
+{
+    float:left;
+    width:780px;
+    height:3px;
+    margin-top:30px;
+    margin-left:15px;
+    background:#cbb48b; 
+}
+
+#search-container
+{
+    width:810px;
+    display:inline-block;
+}
+
+#concert-option
+{
+    font-family: NanumGothic, 고딕, 고딕, sans-serif;
+    font-size: 16px;
+    /*font-weight: bold;*/
+    /*height:32px;*/
+    margin-left:15px;   
+    float:left;
+    margin-top:15px;
+}
+
+.concert-option-cal
+{
+    float:left;
+    padding-left:5px;
+}
+
+#concert-option-search
+{
+    text-align:right;
+    padding-right:15px;
+}
+
+#search-form
+{
+    display:inline-block;
+    position:relative;
+    width:290px;
+    height:32px;           
+    border:1px solid #8e6844;
+    border-radius:5px;
+    margin-top:15px;
+}
+
+.search-field
+{ 
+    position:absolute;
+    display: block;
+    top:0px; 
+    left:3px;        
+    width:62px;
+    height:32px;
+    line-height:32px;
+    font-size:16px; 
+    float:left;   
+    border:0px;
+    border-right:1px solid #8e6844; 
+ 
+}
+
+.search-input
+{    
+    position:absolute;
+    display:block; 
+    top:0px; 
+    left:65px;     
+    width:193px;
+    height:32px;
+    line-height:32px;
+    text-indent:15px;
+    font-size:16px;
+    float:left;
+    border:0px solid #8e6844;    
+}
+
+.search-button
+{
+    position:absolute;
+    display: block;
+    top:0px;
+    right:0px;    
+    width:32px;
+    height:32px;    
+    background:url("../images/btn-zoom.png") no-repeat center;
+    border:0px;
+    border-left:1px solid #8e6844;    
+    text-indent:-999px;
+    overflow:hidden;      
+    cursor:pointer;  
+    float:left;
+}
+
+/*#search-form
+{
+    display:inline-block;
+    margin-top:30px;
+    margin-right:15px;
+    padding-left:150px;
+    background:yellow;
+}
+
+.search-field
+{ 
+    width:70px;
+    height:35px;
+    font-size:20px;
+    border:1px solid #313131;
+}
+
+.search-input
+{
+    width:221px;
+    height:33px;
+    font-size:20px;
+    border:1px solid #313131;
+}
+
+.search-button
+{
+    width:35px;
+    height:35px;
+    font-size:20px;
+    background:url("images/btn-zoom.png") no-repeat center;
+    border:1px solid #313131;
+    text-indent:-999px;
+    overflow:hidden;      
+    cursor:pointer;  
+}*/
+
+.concert-board-table-cell
+{
+    height:350px;
+    width:250px;
+    float:left;
+    margin-right:15px;
+    margin-bottom:15px;
+    display:inline-block;
+    background: url("../images/posterList1.jpg") no-repeat;
+}
+
+/*.concert-board-table-cell:hover
+{
+    height:345px;
+    border-bottom :5px solid red;
+    z-index:1;
+}*/
+
+.content-cell:hover
+{
+    border-bottom :5px solid red;
+    z-index:1;
+}
+
+
+
+.concert-second-table
+{
+    padding-right:15px;
+    position:relative;
+}
+
+.content-row
+{
+    display:inline-block;
+    margin-top:250px;
+    width:250px;
+    height:100px;
+    background:white;
+    opacity:0.8;
+}
+
+.concert-board-table-cell a
+{
+    color:black;
+}
+
+.content-cell
+{
+    display:block;
+    font-weight:bold;
+    opacity:1;
+}
+
+.orch-name
+{
+    font-size:12px;
+    text-align:left;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.orch-title{
+    font-size:12px;
+    text-align:right;
+    margin-right:10px;
+    margin-top:5px;
+}
+
+.orch-date
+{
+    font-size:12px;
+    text-align:right;
+    margin-right:10px;
+    margin-top:18px;
+}
+
+.orch-place
+{
+    font-size:12px;
+    text-align:right;
+    margin-right:10px;
+    margin-top:5px;
+}
+
+.pager
+{
+    display:inline-block;
+}
+
+.pager-list
+{
+    float:left;
+}
+
+.pager-item
+{
+    float:left;
+    font-size: 15px;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.pager-item a:hover
+{
+    text-decoration:underline;
+}
+
+.text-highlight
+{
+    font-weight:bold;
+    color:#ff6a00;
+}
+
+.request
+{
+    width:97px;
+    height:32px;
+    line-height:32px;    
+    margin-top:20px;
+    margin-left:650px;
+    border-radius : 5px;
+    border: 1px solid #8e6844;
+    background: #cbb48b;
+}
+
+.request-item
+{
+    font-family: NanumGothic;
+    font-size: 16px;
+    color: #ffffff;
+    text-align:center;
+    vertical-align:middle;
+}
+
+/*--<풋터 영역>--------------------------------------------------------*/
+
+#footer
+{
+    font-weight:bold;
+}
+
+.company-info-item
+{
+    float:left;
+}
+
+#logo-footer-container
+{
+    /*background:yellow;*/
+}
+
+.item-data
+{
+    font-family: NanumGothic;
+    padding-left:10px;
+    background:url("../images/info-colon.png") no-repeat left center;
+}
+
+.item-newline
+{
+    clear:left;
+    padding-left:0px;
+    background:none;
+}
+
+
+

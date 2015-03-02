@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/view-layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/view-style.css" rel="stylesheet" type="text/css" />
+    <link href="css/view-deploy.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/pointerMove.js"></script>
+</head>
+<body>    
+
+<!----<헤더 영역>----------------------------------------------------------->
+
+    <header id="header">
+        <div class="content-wrapper">
+            <h1 id="logo"><a href="../index.html"><img src="images/logo_brown.png" alt="튠에이" /></a></h1>
+            <section class="header-item-container">
+                <h1 class="hidden">머리말</h1>
+                <nav id="member-menu">
+                    <h1 class="hidden">회원 메뉴</h1>
+                    <ul class="clearfix">
+                        <li class="member-menu-item"><a class="member-menu-item-text" href="../member/join.html">Join</a></li>
+                        <li class="member-menu-item"><a class="member-menu-item-text" href="../member/login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+<!----<메인 메뉴 영역>----------------------------------------------------------->
+
+        <aside id="main-menu">
+            <div class="content-wrapper">
+                <div class="main-menu-item-container">
+                    <h2 class="hidden">메인 메뉴</h2>
+                    <nav id="main-menu-list">
+                        <h3 class="hidden">메인 목록</h3>
+                        <ul class="clearfix">
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="../orchestra/list.html">Orchestra</a></li>
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="list.html">Concert</a></li>
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="../video/group_list.html">Video</a></li>
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="../board/freeboard/list.html">Community</a></li>
+                            <li class="main-menu-item"><a class="main-menu-item-text" href="../admin/tune_a.html">About us</a></li>
+                            <li class="main-menu-item-market"><a class="main-menu-item-text" href="">Market</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+
+<!----<바디 영역>----------------------------------------------------------->
+
+        <div id="body">
+            <div class="content-wrapper clearfix">
+                <aside id="sub-menu">
+                    <h1 class="hidden">서브 메뉴</h1>
+                    <nav id="sub-menu-list">
+                        <h2 class="hidden">서브 목록</h2>
+                        <ul>
+                            <li class="sub-menu-item"><a class="sub-menu-item-text" href="list.html">Concert</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <main id="main">
+                    <h1 id="main-title">베누스토 경인지부 2014 정기 연주회</h1>
+                    <h2 class="hidden">공연 페이지</h2>
+
+
+                    <div id="concert-board">
+                       <div id="concert-info-wrapper">                            
+                           <ul class="concert-image-list">
+                               <li id="lpointer"></li>
+                              <li class="item simage position1 lheight" style="background:url(images/posterView.jpg) no-repeat center; background-size:100% 100%;"></li>
+                               <li class="item mimage position2 mheight" style="background:url(images/posterView.jpg) no-repeat center; background-size:100% 100%;"></li>
+                               <li class="item limage position3 sheight" style="background:url(images/posterView.jpg) no-repeat center; background-size:100% 100%;"></li>
+                               <li class="item mimage position4 mheight" style="background:url(images/posterView.jpg) no-repeat center; background-size:100% 100%;"></li>
+                               <!--<li class="item simage position5 lheight" style="background:url(images/posterView.jpg) no-repeat center; background-size:100% 100%;"></li>
+                               <li class="item simage position5 lheight" style="background:url(images/posterView.jpg) no-repeat center; background-size:100% 100%;"></li>-->                               <li id="rpointer"></li>
+                           </ul>
+                           <div class="concert-table">
+                               <div class="clearfix"><p>일시 : 2014년 12월 21일 오후 6시</p><p>  입장료 : 무료</p></div>
+                               <div class="clearfix">
+                                   <p class="concert-table-down">장소 : 경기도 부천시 소사구 부천시민회관 대공연장 </p><p> 문의처 : http://cafe.daun.net/venusto2 </p>
+                               </div>
+                               </div>
+                        </div>
+
+                        <div id="concert-write-wrapper">
+                          <img src="images/posterView.jpg" class="poster-img"/>
+                            <p class="concert-write-content">
+                                내용내용내용입니다 허허허<br />
+                                내용내용내용입니다 허허허<br />
+                                내용내용내용입니다 허허허<br />
+                                내용내용내용입니다 허허허<br />
+                                내용내용내용입니다 허허허<br />
+                                내용내용내용입니다 허허허<br />                            
+                            </p>
+                        </div>
+                        <a href="list.html">
+                            <div class="go-list">
+                                <h3 class="hidden">등록 메뉴</h3>
+                                <p class="go-list-item">
+                                    목 록
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                   
+                </main>
+            </div>
+        </div>
+
+<!----<풋터 영역>----------------------------------------------------------->
+
+        <footer id="footer">
+            <div class="content-wrapper clearfix">
+                <div id="logo-footer-container">
+                    <h2 id="logo-footer"><img src="images/logo-footer.png" alt="회사 정보" /></h2>
+                </div>
+                <div id="company-info-container">
+                    <div id="company-info">
+                        <h3 class="hidden">소유자정보</h3>
+                        <dl class="clearfix">
+                            <dt class="company-info-item item-title item-newline">팀장</dt>
+                            <dd class="company-info-item item-data">김경현</dd>
+                            <dt class="company-info-item item-title item-newline">이메일</dt>
+                            <dd class="company-info-item item-data">kyunghyun96@naver.com</dd>
+                            <dt class="company-info-item item-title item-newline">전화번호</dt>
+                            <dd class="company-info-item item-data">010-2231-5935</dd>
+                        </dl>
+                    </div>
+
+                    <div id="copyright">
+                        <h3 class="hidden">저작권정보</h3>
+                        <p>Copyright@tune-A.com 2015 -....</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<!----<퀵메뉴 영역>----------------------------------------------------------->
+
+        <!--<aside id="quick-menu">
+            <h1>QUICK MENU</h1>
+
+            <nav>
+                <h1>자주가는 메뉴</h1>
+                <ul>
+                    <li>오케스트라 소개</li>
+                    <li>공연 소개</li>
+                    <li>공연 영상</li>
+                    <li>게시판</li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h1>스크롤 메뉴</h1>
+                <ul>
+                    <li>맨 위로 △</li>
+                    <li>아래로 ▽</li>
+                </ul>
+            </nav>
+        </aside>-->
+</body>
+</html>

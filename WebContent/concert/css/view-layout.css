@@ -1,0 +1,227 @@
+﻿
+/*--<헤더 영역>----------------------------------------------------------*/
+
+#header
+{   
+    height:100px;
+}
+
+#header .content-wrapper
+{
+    position: relative;
+    background:#313131;
+}
+
+.header-item-container 
+{
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/*--<메인 메뉴 영역>----------------------------------------------------------*/
+
+#main-menu .content-wrapper
+{
+    position: relative;
+    border-top:3px solid #cbb48b;
+    border-bottom:3px solid #cbb48b;
+    height:60px;
+    background:#8e6844;
+}
+
+.main-menu-item-container
+{
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/*--<바디 영역>----------------------------------------------------------*/
+
+#body
+{   
+    min-height:770px;        
+}
+
+#body .content-wrapper
+{    
+    background:#e3dac9
+}
+
+#sub-menu
+{
+    min-height:inherit;
+    width:270px;    
+    float:left;
+}
+
+#main
+{
+    min-height:inherit;
+    width:810px;    
+    float:left;
+    padding-bottom:20px;
+    background:#ffffff;
+}
+
+
+/*--<풋터 영역>--------------------------------------------------------*/
+
+#footer
+{
+    background:#313131;
+    height:100px;
+}
+
+/*#footer .content-wrapper
+{
+    background:#313131;
+}*/
+
+/*--<공통 영역>----------------------------------------------------------*/
+
+.content-wrapper
+{
+    width:1080px;    
+    height:inherit;
+    min-height:inherit;
+    margin-left:auto;
+    margin-right:auto;    
+}
+
+.clearfix:after
+{
+    content:" "; 
+    display:block;
+    clear:both;
+    visibility:hidden;
+    height:0px;
+    line-height:0px;    
+}
+
+/*-----------------------콘서트 관련 파트--------------------------------------------*/
+
+#concert-info-wrapper{
+    border-top:3px solid #cbb48b;
+    display:inline-block;
+    width:780px;
+    margin-left:15px;
+    overflow:hidden;
+    position:relative;
+    height:526px;
+}
+.concert-image-list li{
+    position:absolute;
+}
+
+.simage{
+    width:161px;
+    height:212px;
+    z-index:1;
+}
+.mimage{
+    width:230px;
+    height:302px;
+    z-index:2;
+}
+.limage{
+    width:305px;
+    height:400px;
+    z-index:3;
+}
+.oimage{
+    width:90px;
+    height:100px;
+    z-index:1;
+}
+.oheight{
+    top:150px;
+}
+.lheight{
+    top:112px;
+}
+.mheight{
+    top:67px;
+}
+.sheight{
+    top:15px;
+}
+
+
+.position0{
+    left:-90px;
+}
+.position1{
+    left:0px;
+}
+.position2{
+    left:105px;
+}
+.position3{
+    left:234px;
+}
+.position4{
+    left:479px;
+}
+.position5{
+    left:653px;
+}
+.position6{
+    left:780px;
+}
+
+#lpointer{
+    width:30px;
+    height:37px;
+    /*background:rgba(255, 255, 255, 0.5);*/
+    background:red;
+    left:15px;
+    top:199px;
+    z-index:3;
+    cursor:pointer;
+}
+#rpointer{
+    width:30px;
+    height:37px;
+    /*background:rgba(255, 255, 255, 0.5);*/
+    background:blue;
+    right:15px;
+    top:199px;
+    z-index:2;
+    cursor:pointer;
+}
+
+
+
+.concert-table{
+    width:778px;
+    height:69px;
+    border:1px solid #cbb48b;
+    border-radius:5px;
+    margin-top: 454px;
+}
+
+#concert-write-wrapper{
+    border-top:3px solid #cbb48b;
+    margin-top:15px;
+    width:780px;
+    margin-left:15px;
+    padding-top:20px;
+}
+.poster-img{
+    width:100%;
+}
+.concert-write-content{
+    margin-top:15px;
+    border:1px solid #cbb48b;
+    border-radius:5px;
+    padding:15px;
+    width:748px;
+    min-height:20px;
+    line-height:20px;
+}

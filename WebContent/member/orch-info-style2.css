@@ -1,0 +1,152 @@
+﻿.side-menu-item {
+    text-align:center;
+    padding-top:20px;
+}
+.side-menu-item a:hover{
+    text-decoration:underline;
+}
+.side-menu-item-text {
+    font-size:15px;
+    color: #313131; 
+    font-weight:bold;
+    
+}
+
+.hidden{
+    display:none;
+}
+
+
+#main-form {
+    /*margin-top:31px;*/
+    margin-left:15px;
+    margin-right:15px;
+    border-top:3px solid #8e6844;
+}
+
+#main-title-text{
+    font-size:20px;
+    font-weight:bold;
+    color:#313131;
+    text-align:center;
+   
+}
+
+
+
+.body-main-item-text{
+    margin-bottom:5px;
+    font-size:16px;
+    font-weight:bold;
+    color:#313131;
+    width:120px;
+    border-radius:5px;
+    
+}
+
+.body-main-item-text-s{
+    margin-bottom:5px;
+    font-size:16px;
+    font-weight:bold;
+    color:#313131;
+    width:120px;
+    border-radius:5px;
+    margin-right:60px;
+    float:left; 
+}
+
+.body-main-item-list{
+    padding-top:19px;
+  
+}
+
+.file-button{
+	line-heigth:32px;
+     width:80px;
+    height:25px; 
+    cursor:pointer;
+    
+}
+
+.file-text{
+	border-radius:5px;
+	width:370px;
+	border:1px solid #cbb48b;
+	height:32px;
+}
+
+.textbox{
+    
+    border:1px solid #cbb48b;
+   width:450px;
+    height:32px;
+    border-radius:5px;
+    margin-top:5px;   
+}
+
+.textbox-s{
+    
+    border:1px solid #cbb48b;
+   width:160px;
+    height:32px;
+    border-radius:5px;
+    margin-top:5px; 
+    margin-right:15px;
+    float:left;  
+}
+
+#editor{
+	width: 605px;
+	height: 300px;
+	
+	
+}
+/* #content{
+	width: 609px;
+	height: 334px;
+	border:1px solid #cbb48b;
+	border-radius:5px;
+	margin-top:5px;
+} */
+
+#orch-category{
+    border:1px solid #cbb48b;
+     width:97px;
+    height:32px;
+     margin-right:20px;
+     border-radius:5px;
+     margin-top:5px;
+}
+
+#rivsion-btn{
+     
+    width:97px;
+    height:32px;
+    background:#cbb48b;
+    border-radius:5px;
+    color:#ffffff;
+    border:1px solid #8e6844;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+   
+}
+
+/* .file-btn{
+   border:1px solid #cbb48b;
+    height:32px;
+     width:450px;
+   border-radius:5px;
+    text-indent:-999px;
+    overflow:hidden;
+   background:url("images/img-search.png") no-repeat  right;
+   background-size:80px;
+   margin-top:5px;
+}
+ */
+
+.content-box{
+   width:450px;
+    height:200px;
+ 
+}

@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="basic-list-layout(side).css" rel="stylesheet"
+	type="text/css" />
+<link href="basic-list-style.css" rel="stylesheet" type="text/css" />
+<link href="basic-list-deploy.css" rel="stylesheet" type="text/css" />
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="orch-info-style2.css" rel="stylesheet" type="text/css" />
+<link href="orch-info-deploy2.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="modernizr.js"></script>
+<script type="text/javascript" src="se2/js/HuskyEZCreator.js" charset="utf-8"></script>
+<script type="text/javascript" src="se2/photo_uploader/plugin/hp_SE2M_AttachQuickPhoto.js" charset="utf-8"></script>
+<title>Tune-A</title>
+
+<script>
+
+   window.addEventListener("load", function(){
+      
+      var fileButton=document.querySelectorAll(".file-button");
+      
+     
+      fileButton[0].addEventListener("click",function(){
+    	  imgUpload(0);
+      });
+      fileButton[1].addEventListener("click",function(){imgUpload(1);});
+      fileButton[2].addEventListener("click",function(){imgUpload(2);});
+      
+     
+   });
+   
+   function imgUpload(num){
+	    var event=document.createEvent("MouseEvent");
+       event.initEvent("click",true,true);
+       
+       var file = document.querySelectorAll(".file-btn");
+     
+       file[num].dispatchEvent(event); 
+       
+      
+      
+   }
+   
+   function aa(form){
+	  
+	    var fileText=document.querySelectorAll(".file-text");
+       fileText[0].value=form.file_name.value;
+       fileText[1].value=form.file_name1.value;
+       fileText[2].value=form.file_name2.value;
+	
+      
+   }
+   
+  
+
+</script>
+
+<!-- function(){
+         
+         var event=document.createEvent("MouseEvent");
+         event.initEvent("click",true,true);
+         
+         var file = document.querySelectorAll(".file-btn");
+       
+         file[i-3].dispatchEvent(event);
+      
+       /*   file[i-1].addEventListener("onpropertychange",function(){
+        	 alert(file[i-1].name);
+         }); */
+         
+   /*       var fileText=document.querySelectorAll(".file-text");
+         fileText[i-1].value=file[i-1].name;
+         console.log(fileText[i-1].value);
+         alert(file[i].name);
+      */
+      } -->
+</head>
+
+
+<body>
+	<!----<헤더 영역>----------------------------------------------------------->
+
+	<header id="header">
+		<div class="content-wrapper">
+			<h1 id="logo">
+				<a href="../index.html"> <img src="images/logo_brown.png"
+					alt="튠에이" />
+				</a>
+			</h1>
+			<section class="header-item-container">
+				<h1 class="hidden">머리말</h1>
+				<nav id="member-menu">
+					<h1 class="hidden">회원 메뉴</h1>
+					<ul class="clearfix">
+						<li class="member-menu-item"><a class="member-menu-item-text"
+							href="join.html">Join</a></li>
+						<li class="member-menu-item"><a class="member-menu-item-text"
+							href="login.html">Login</a></li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+
+	</header>
+
+	<!----<메인 메뉴 영역>----------------------------------------------------------->
+
+	<aside id="main-menu">
+		<div class="content-wrapper">
+			<div class="main-menu-item-container">
+				<h2 class="hidden">메인 메뉴</h2>
+				<nav id="main-menu-list">
+					<h3 class="hidden">메인 목록</h3>
+					<ul class="clearfix">
+						<li class="main-menu-item"><a class="main-menu-item-text"
+							href="../orchestra/list.html">Orchestra</a></li>
+						<li class="main-menu-item"><a class="main-menu-item-text"
+							href="../concert/list.html">Concert</a></li>
+						<li class="main-menu-item"><a class="main-menu-item-text"
+							href="../video/group_list.html">Video</a></li>
+						<li class="main-menu-item"><a class="main-menu-item-text"
+							href="../board/freeboard/list.html">Community</a></li>
+						<li class="main-menu-item"><a class="main-menu-item-text"
+							href="../admin/tune_a.html">About us</a></li>
+						<li class="main-menu-item-market"><a
+							class="main-menu-item-text" href="">Market</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</aside>
+
+	<!----<바디 영역>----------------------------------------------------------->
+	<div id="body">
+		<div class="content-wrapper clearfix">
+			<aside id="sub-menu">
+				<h1 class="hidden">사이드 메뉴</h1>
+				<nav>
+					<h1 class="hidden">정보 수정 및 오케스트라 등록</h1>
+					<ul>
+						<li class="side-menu-item"><a class="side-menu-item-text"
+							href="info.html">정보 수정</a></li>
+						<li class="side-menu-item"><a class="side-menu-item-text"
+							href="orch.html">소개페이지 수정</a></li>
+						<li class="side-menu-item"><a class="side-menu-item-text"
+							href="../orchestra/leader_change.html">권한 위임</a></li>
+					</ul>
+				</nav>
+
+			</aside>
+
+			<main id="main">
+			<section>
+				<h1 id="main-title-text">오케스트라 소개페이지</h1>
+
+				<h3 class="hidden">소개페이지 폼</h3>
+
+
+				<form id="main-form">
+					<fieldset>
+
+						<legend class="hidden">오케스트라 소개페이지 </legend>
+						<div id="body-main-container">
+							<div class="body-main-item-list">
+								<label class="body-main-item-text" for="img">소개 이미지 </label> <br />
+								<input class="file-text" /> <input class="hidden file-btn"
+									type="file" name="file_name" onchange="aa(this.form)" /> <img
+									class="file-button" src="images/img-search.PNG" />
+							</div>
+
+
+							<br />
+							<div class="body-main-item-list">
+								<label class="body-main-item-text-s" for="mem_num">인 원 </label>
+								<label class="body-main-item-text-s" for="time">연습 일시 </label> <label
+									class="body-main-item-text-s" for=" orch_cat">분류</label> <br />
+								<input class="textbox-s" type="text" name="mem_num" /> <input
+									class="textbox-s" type="text" name="time" /> <select
+									id="orch-category" name=orch_cat>
+									<option class="orch-category-">분 류 1</option>
+									<option>분 류 2</option>
+									<option>분 류 3</option>
+									<option>분 류 4</option>
+									<option>분 류 5</option>
+								</select>
+
+							</div>
+							<br />
+							<div class="body-main-item-list">
+								<label class="body-main-item-text" for="place">연습 장소 </label> <br />
+								<input class="file-text" /> <input class="hidden file-btn"
+									type="file" name="file_name1" onchange="aa(this.form)" /> <img
+									class="file-button" src="images/img-search.PNG" />
+							</div>
+
+							<br />
+							<div class="body-main-item-list">
+								<label class="body-main-item-text" for="photo">단체 사진 </label> <br />
+								<input class="file-text" /> <input class="hidden file-btn"
+									type="file" name="file_name2" onchange="aa(this.form)" /> <img
+									class="file-button" src="images/img-search.PNG" />
+							</div>
+							<br />
+							</div>
+							<div id="content-container">
+								<div class="body-main-item-list">
+								<label class="body-main-item-text" for="intro">소 개 글 </label> <br />
+								<div id="content">
+								<form method="post" id="frm">
+									<textarea name="editor" id="editor" rows="10" cols="100" 
+									></textarea>
+ 
+								</form>
+								</div>
+								</div>
+							<br />
+						</div>
+						<div id="btn-container">
+							<input id="rivsion-btn" type="submit" value="수정" />
+						</div>
+					</fieldset>
+				</form>
+
+			</section>
+			</main>
+		</div>
+	</div>
+
+	<!----<풋터 영역>----------------------------------------------------------->
+
+	<footer id="footer">
+		<div class="content-wrapper clearfix">
+			<div id="logo-footer-container">
+				<h2 id="logo-footer">
+					<img src="images/logo-footer.png" alt="회사 정보" />
+				</h2>
+			</div>
+			<div id="company-info-container">
+				<div id="company-info">
+					<h3 class="hidden">소유자정보</h3>
+					<dl class="clearfix">
+						<dt class="company-info-item item-title item-newline">팀장</dt>
+						<dd class="company-info-item item-data">김경현</dd>
+						<dt class="company-info-item item-title item-newline">이메일</dt>
+						<dd class="company-info-item item-data">kyunghyun96@naver.com</dd>
+						<dt class="company-info-item item-title item-newline">전화번호</dt>
+						<dd class="company-info-item item-data">010-2231-5935</dd>
+					</dl>
+				</div>
+
+				<div id="copyright">
+					<h3 class="hidden">저작권정보</h3>
+					<p>Copyright@tune-A.com 2015 -....</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--<aside>
+            <h1>QUICK MENU</h1>
+            <nav>
+                <h1>자주가는 메뉴</h1>
+                <ul>
+                    <li>오케스트라 소개</li>
+                    <li>공연 소개</li>
+                    <li>공연 영상</li>
+                    <li>게시판</li>
+                </ul>
+            </nav>
+            <nav>
+                <h1>스크롤 메뉴</h1>
+                <p>top</p>
+                <p>bottom</p>
+            </nav>
+        </aside>-->
+
+</body>
+<script type="text/javascript">
+ 
+var oEditors = [];
+nhn.husky.EZCreator.createInIFrame({
+    oAppRef: oEditors,
+    elPlaceHolder: "editor",
+    sSkinURI: "se2/SmartEditor2Skin.html",
+    htParams: {
+        bUseToolbar: true,				// 툴바 사용 여부 (true:사용/ false:사용하지 않음)
+        bUseVerticalResizer: false,		// 입력창 크기 조절바 사용 여부 (true:사용/ false:사용하지 않음)
+        bUseModeChanger: false,			// 모드 탭(Editor | HTML | TEXT) 사용 여부 (true:사용/ false:사용하지 않음)
+        //aAdditionalFontList : aAdditionalFontSet,		// 추가 글꼴 목록
+        fOnBeforeUnload: function () {
+            //alert("완료!");
+        }
+    }, //boolean
+    fOnAppLoad: function () {
+        //예제 코드
+        //oEditors.getById["ir1"].exec("PASTE_HTML", ["로딩이 완료된 후에 본문에 삽입되는 text입니다."]);
+    },
+    fCreator: "createSEditor2"
+});
+ 
+//‘저장’ 버튼을 누르는 등 저장을 위한 액션을 했을 때 submitContents가 호출된다고 가정한다.
+function submitContents(elClickedObj) {
+    // 에디터의 내용이 textarea에 적용된다.
+    oEditors.getById["editor"].exec("UPDATE_CONTENTS_FIELD", [ ]);
+ 
+    // 에디터의 내용에 대한 값 검증은 이곳에서
+    // document.getElementById("textAreaContent").value를 이용해서 처리한다.
+  
+    try {
+        elClickedObj.form.submit();
+    } catch(e) {
+     
+    }
+}
+ 
+// textArea에 이미지 첨부
+function pasteHTML(filepath){
+    var sHTML = '<img src="C:/Users/Hyunhong/Desktop/TeamPrj/문서/페이지 구성/TuneaPrj/WebContent/member/se2/upload/'+filepath+'">';
+    oEditors.getById["editor"].exec("PASTE_HTML", [sHTML]);
+}
+ 
+</script>
+</html>
