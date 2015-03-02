@@ -1,9 +1,9 @@
-ï»¿
-/*--<ê³µí†µ ì˜ì—­>----------------------------------------------------------*/
+
+/*--<°øÅë ¿µ¿ª>----------------------------------------------------------*/
 
 body
 {
-    font-family: NanumGothic, ê³ ë”•, sans-serif;
+    font-family: NanumGothic, °íµñ, sans-serif;
     font-size : 12px;
     color: #979797;
     background:url("../images/back.jpg") center;
@@ -20,7 +20,7 @@ a
     display:none;
 }
 
-/*--<í—¤ë” ì˜ì—­>----------------------------------------------------------*/
+/*--<Çì´õ ¿µ¿ª>----------------------------------------------------------*/
 
 #member-menu
 {
@@ -31,7 +31,7 @@ a
 {
     float: left;       
     padding-left: 24px;
-    background: url("images/bg-member-menu-vsp.png") no-repeat 12px center;
+    background: url("../images/bg-member-menu-vsp.png") no-repeat 12px center;
 }
 
 .member-menu-item:first-child
@@ -42,7 +42,7 @@ a
 
 .member-menu-item-text
 {
-    font-family: NanumGothic, ê³ ë”•, sans-serif;
+    font-family: NanumGothic, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold; 
     color: #ffffff;   
@@ -53,7 +53,7 @@ a
     text-decoration:underline;
 }
 
-/*--<ë©”ì¸ ë©”ë‰´ ì˜ì—­>----------------------------------------------------------*/
+/*--<¸ÞÀÎ ¸Þ´º ¿µ¿ª>----------------------------------------------------------*/
 
 #main-menu-list
 {    
@@ -64,7 +64,7 @@ a
 {
     float:left;    
     padding-left:37px;    
-    background:url("images/bg-main-menu-vsp.png") no-repeat 20px center;
+    background:url("../images/bg-main-menu-vsp.png") no-repeat 20px center;
 
 }
 
@@ -85,7 +85,7 @@ a
 
 .main-menu-item-text
 {
-    font-family: NanumGothic, ê³ ë”•, sans-serif;
+    font-family: NanumGothic, °íµñ, sans-serif;
     font-size:20px;
     font-weight: bold;
     color: #cbb48b;
@@ -177,11 +177,11 @@ a
   }
 }*/
 
-/*--<ë°”ë”” ì˜ì—­>----------------------------------------------------------*/
+/*--<¹Ùµð ¿µ¿ª>----------------------------------------------------------*/
 
 .sub-menu-item-text
 {
-    font-family: NanumGothic, ê³ ë”•, sans-serif;
+    font-family: NanumGothic, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold; 
     color: #313131; 
@@ -195,7 +195,7 @@ a
 
 #main-title
 {
-    font-family: NanumGothic, ê³ ë”•, sans-serif;
+    font-family: NanumGothic, °íµñ, sans-serif;
     font-size:21px;
     font-weight: bold;
     color: #313131; 
@@ -231,7 +231,7 @@ a
     width:35px;
     height:35px;
     font-size:20px;
-    background:url("images/btn-zoom.png") no-repeat center;
+    background:url("../images/btn-zoom.png") no-repeat center;
     border:1px solid #313131;
     text-indent:-999px;
     overflow:hidden;      
@@ -280,14 +280,14 @@ a
 }
 .request-item a
 {
-    font-family: NanumGothic, ê³ ë”•, sans-serif;
+    font-family: NanumGothic, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
     padding-left:11px;
 }
 
-/*--<í’‹í„° ì˜ì—­>--------------------------------------------------------*/
+/*--<Ç²ÅÍ ¿µ¿ª>--------------------------------------------------------*/
 
 #footer
 {
@@ -299,10 +299,22 @@ a
     float:left;
 }
 
+.item-title
+{
+    padding-left:20px;
+    background:url("../images/bg-vsp-gray-12.png") no-repeat 10px center;
+}
+
+.item-title:first-child
+{
+    padding-left:0px;
+    background: none;
+}
+
 .item-data
 {
     padding-left:10px;
-    background:url("images/info-colon.png") no-repeat left center;
+    background:url("../images/footer-colon.png") no-repeat left center;
 }
 
 .item-newline
@@ -311,8 +323,6 @@ a
     padding-left:0px;
     background:none;
 }
-
-
 
 
 /*-------------------------<main Style>-------------------------------*/

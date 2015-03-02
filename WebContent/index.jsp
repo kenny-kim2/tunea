@@ -129,7 +129,7 @@
 
     <header id="header">
         <div class="content-wrapper">
-            <h1 id="logo"><a href=""><img src="images/logo_brown.png" alt="튠에이" /></a></h1>
+            <h1 id="logo"><a href=""><img src="images/logo.png" alt="튠에이" /></a></h1>
             <section class="header-item-container">
                 <h1 class="hidden">머리말</h1>
                 <nav id="member-menu">
@@ -330,27 +330,27 @@
 
     <!----<풋터 영역>----------------------------------------------------------->
 
-    <footer id="footer">
+        <footer id="footer">
         <div class="content-wrapper clearfix">
             <div id="logo-footer-container">
-                <h2 id="logo-footer"><img src="images/logo-footer.png" alt="회사 정보" /></h2>
+                <h2 id="logo-footer"><a href="../index.html"><img src="images/logo-footer.png" alt="회사 정보" /></a></h2>
             </div>
             <div id="company-info-container">
                 <div id="company-info">
                     <h3 class="hidden">소유자정보</h3>
                     <dl class="clearfix">
-                        <dt class="company-info-item item-title item-newline">팀장</dt>
+                        <dt class="company-info-item item-title">팀장</dt>
                         <dd class="company-info-item item-data">김경현</dd>
-                        <dt class="company-info-item item-title item-newline">이메일</dt>
+                        <dt class="company-info-item item-title">이메일</dt>
                         <dd class="company-info-item item-data">kyunghyun96@naver.com</dd>
-                        <dt class="company-info-item item-title item-newline">전화번호</dt>
+                        <dt class="company-info-item item-title">전화번호</dt>
                         <dd class="company-info-item item-data">010-2231-5935</dd>
                     </dl>
                 </div>
 
                 <div id="copyright">
                     <h3 class="hidden">저작권정보</h3>
-                    <p>Copyright@tune-A.com 2015 -....</p>
+                    <p>Copyright 2015. tune-A.com All Rights Reserved.</p>
                 </div>
             </div>
         </div>
