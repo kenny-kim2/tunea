@@ -16,12 +16,19 @@
 	String msg="";
 	String id = request.getParameter("Id");
 	checkId=dao.checkId(id);
-	if(checkId==2){
-		checkMsg="중복된 아이디입니다.";
-		
-	}	else{
+	
+	if(checkId==1){
 		checkMsg="사용 가능한 아이디입니다.";
+	    
+		
 	}
+	else if(id.equals(""))
+	checkMsg="아이디를 입력 해 주세요.";
+	else{
+		checkMsg="중복된 아이디입니다.";
+
+	}
+	
 	String firstpw = request.getParameter("Pw");
 	String repw = request.getParameter("rePw");
 	if(firstpw==repw){

@@ -904,7 +904,7 @@
                         <label class="main-info-item" for=" pwd">PW</label>
                     </div>
                     <input class="login-table-textbox" type="password" name="pwd" onfocus="this.value=''"
-                           onblur="if(this.value==''){this.type='password';}" value="비밀번호 8~10자리를 입력 해 주세요." />
+                           onblur="if(this.value==''){this.type='password';}" value="비밀번호 " />
                     <br />
 
                         

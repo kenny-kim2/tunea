@@ -29,6 +29,32 @@
     });
 
     </script>
+    
+     <script type="text/javascript">
+            $(function () {
+                $('#datepicker_birth').datepicker({
+                    inline: true,
+                    //nextText: '&rarr;',
+                    //prevText: '&larr;',
+                    showOtherMonths: true,
+                    changeYear: true,
+                     yearRange:'1900:+0', 
+                    changeMonth: true,
+                    //dateFormat: 'dd MM yy',
+                    dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+                    //showOn: "button",
+                    //buttonImage: "img/calendar-blue.png",
+                    //buttonImageOnly: true,
+                   
+                    dateFormat: 'yy-mm-dd',
+              
+
+                });
+            });
+
+
+
+        </script>
 
 <!--<script type="text/javascript">
             function changetxt() {
@@ -117,14 +143,17 @@
 						</div>
 						<div class="clearfix-same">
 							<input id="main-join-text" type="text" name="Id"
-								title="아이디는 10자미만으로 입력 해 주세요." />
-							<form id="main-join-button" action="checkIdProc.jsp" method="post">
-								<input class="main-newline" type="submit" value="중복확인" />
-								<!-- <a class="main-newline" href="checkIdProc.jsp">중복확인</a> -->
-							</form>
-							<div>
+								title="아이디는 10자미만으로 입력 해 주세요."/>
+						<!-- 	<form id="main-join-button" action="checkIdProc.jsp" method="post"> -->
+							<!-- 	<input class="main-newline" type="submit" value="중복확인" /> -->
+							<p id="main-join-button" ><a class="main-newline" onclick="$(this).closest('form').submit()">중복확인</a></p> 
+							
+						<div>
 							<span style="color: red;">${checkMsg}</span>
-						</div>
+						</div> 
+						
+						<!-- 	</form> -->
+							
 
 						</div>
 
@@ -154,17 +183,20 @@
 
 
 						<div class="clearfix">
-							<label id="main-join-title-aside" for="fam_name">성명 이름</label> <label
-								id="main-join-title-gender" for="last_name">성</label> <label
-								id="main-join-title-gender2" for="gender">성별</label>
+							<label id="main-join-title-aside" for="fam_name">성명 이름</label> 
+							<label
+								id="main-join-title-gender" for="last_name">성</label> 
+								<!-- <label
+								id="main-join-title-gender2" for="gender">성별</label> -->
 						</div>
 						<div class="clearfix-same">
 							<input id="main-name-text" type="text" name="fam_name" /> <input
-								id="main-lastname-text" type="text" name="last_name" /> <select
+								id="main-lastname-text" type="text" name="last_name" /> 
+								<!-- <select
 								id="main-join-button2" name="field">
 								<option>남자</option>
 								<option>여자</option>
-							</select>
+							</select> -->
 						</div>
 
 
@@ -185,7 +217,10 @@
 							<label id="main-join-title-aside" for="birth">생년월일</label>
 						</div>
 						<div class="clearfix-same">
-							<input id="main-join-text" type="text" name="birth" />
+							<input id="datepicker_birth" type="text" name="birth"
+							 style="margin-left:330px; float:left; height:32px;
+							  width:143px; border:1px solid #cbb48b;border-radius:5px;text-indent:15px;
+							  font-size:12px;font-weight:bold"/>
 						</div>
 
 

@@ -69,6 +69,13 @@
             left: 0;
             top: 0;
         }
+        
+        
+        #mask{
+        background:#ffffff url("../images/back.jpg") repeat left top;
+        
+        }
+        
     </style>
   
       
@@ -79,20 +86,20 @@
 
 </head>
 <body>
-   
+   <div id="background2">
 
     <!------------------------------------------------로그인 팝업----------------------->
     <!--<input type="button" onclick="clicktest();" value="블러테스트" />-->
     <div id="mask"></div>
     <div style="background:#ffffff; width: 300px; height: 400px; position: absolute; top:250px; left:600px; display: none; z-index:10001; border:1px;border-radius:5px;" id="test">
-        <img id="btn-close" src="images/btn-close02.png"   onclick="btnexit();"  />
+        <a href="../index.jsp"><img id="btn-close" src="images/btn-close02.png"   onclick="btnexit();"/></a>
 
         <!--  <h1 id="main-title"><로그인></h1>-->
 
         <div>
             <!--<h2 class="hidden">로그인 폼</h2>-->
             
-            <div>
+            <div style="text-align:center;">
 				<span style="color:red;">${msg}</span>
 			</div>
             <form action="loginProc.jsp" method="post">
@@ -114,7 +121,7 @@
                         <label class="main-info-item" for=" pwd">PW</label>
                     </div>
                     <input class="login-table-textbox" type="password" name="pwd" onfocus="this.value=''"
-                           onblur="if(this.value==''){this.type='password';}" value="비밀번호 8~10자리를 입력 해 주세요." />
+                           onblur="if(this.value==''){this.type='password';}" value="" />
                     <br />
 
                         
@@ -140,7 +147,7 @@
 
 
     </div>
-
+</div>
    
 </body>
 </html>

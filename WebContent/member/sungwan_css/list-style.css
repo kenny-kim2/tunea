@@ -519,6 +519,7 @@ margin-top:0px;
     margin-left:15px;
     padding:7px;
       background:#cbb48b;
+      cursor:pointer;
     /*background:#cbb48b;*/
 
 }
@@ -545,7 +546,17 @@ margin-top:0px;
     padding-left:0px;
     background:none;
    color:white;
+   cursor:pointer;
 
+}
+
+#datepicker_birth{
+	margin-left:195px;
+     float:left;
+    height:32px;
+    width:143px;
+    border:1px solid #cbb48b;
+    border-radius:5px;
 }
 
 #main-join-final
