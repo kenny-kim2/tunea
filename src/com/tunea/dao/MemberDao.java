@@ -1,5 +1,7 @@
 package com.tunea.dao;
 
+import java.util.List;
+
 import com.tunea.model.Member;
 
 public interface MemberDao {
@@ -7,7 +9,7 @@ public interface MemberDao {
 	public int insert(Member member);
 	public int delete(String uid);
 	public int update(Member member);
-	public int  checkId(String id);
-	public int  checkNic(String nicname);
+	public List<Member>  getMembers();
+	
 	
 }

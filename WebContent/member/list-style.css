@@ -454,7 +454,7 @@ margin-top:0px;
   
 }
 
-#main-name-text
+.main-name-text
 {
     margin-left:330px;
      float:left;
@@ -510,8 +510,8 @@ margin-top:0px;
     border-radius:5px;
     margin-left:15px;
     padding:7px;
-      background:none;
-    /*background:#cbb48b;*/
+   /*    background:none; */
+    background:#cbb48b;
 
 }
 

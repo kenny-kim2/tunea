@@ -7,6 +7,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.tunea.dao.MemberDao;
 import com.tunea.model.Member;
@@ -148,33 +150,32 @@ public class JdbcMemberDao implements MemberDao {
 
 
 	@Override
-	public int checkId(String id) {
+	public List<Member> getMembers() {
 		String url = "jdbc:sqlserver://win.newlecture.com:1433;databaseName=tunea";
-		String sql = "select *from members where id=?";
+		String sql = "select * from members";
 
 		int result=0;
 		try {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			Connection con = DriverManager.getConnection(url, "kenny", "computer");
-			PreparedStatement st = con.prepareStatement(sql);
-			st.setString(1, id);
+			Statement st = con.createStatement();	
+			ResultSet rs = st.executeQuery(sql);
 			
-			ResultSet rs = st.executeQuery();
+			List<Member> list=new ArrayList<Member>();
 			
-			rs.next();
-			
-			if(!rs.getString("Id").equals(null)){
-				result=2;
-			}else{
-				result=1;
+			while(rs.next()){
+				Member member = new Member();
+				member.setId(rs.getString("Id"));
+				member.setNickname(rs.getString("Nickname"));
+				
+				list.add(member);
 			}
-			
 			
 			
 			rs.close();
 			st.close();
 			con.close();
-			return result;
+			return list;
 
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -184,14 +185,9 @@ public class JdbcMemberDao implements MemberDao {
 			e.printStackTrace();
 		}
 
-		return 0;
+		return null;
 	}
 
 
-	@Override
-	public int checkNic(String nicname) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
 }

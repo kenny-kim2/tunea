@@ -34,17 +34,14 @@
             $(function () {
                 $('#datepicker_birth').datepicker({
                     inline: true,
-                    //nextText: '&rarr;',
-                    //prevText: '&larr;',
+                   
                     showOtherMonths: true,
                     changeYear: true,
                      yearRange:'1900:+0', 
                     changeMonth: true,
-                    //dateFormat: 'dd MM yy',
+                    
                     dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-                    //showOn: "button",
-                    //buttonImage: "img/calendar-blue.png",
-                    //buttonImageOnly: true,
+                    
                    
                     dateFormat: 'yy-mm-dd',
               
@@ -56,20 +53,88 @@
 
         </script>
 
-<!--<script type="text/javascript">
-            function changetxt() {
-            if ($('.pwd').val() == "Enter Your Password Here" ) {
-            $('.pwd').val('');
-            $('.pwd').css('color', 'black' );
-            }
-            }
-            function textboxtype() {
-            if ($('.pwd').val().length < 1) {
-            $('.pwd').val('Enter Your Password Here');
-            $('.pwd').css('color', 'gray');
-        }
-    }
-    </script>-->
+<script>
+
+
+window.onload = function(){
+	var msg=document.querySelector("#msg");
+	var msgtext= document.querySelector("#main-join-text");
+	var btncheck = document.querySelector("#main-join-button");
+	btncheck.onclick = function(){
+		if(msgtext.value==""){
+			alert("입력된 값이 없습니다.");
+		}else{
+			var msgValue="사용 가능한 아이디 입니다."; 
+		 var oReq = new XMLHttpRequest();
+		   if (oReq) {
+			  
+			   oReq.onreadystatechange = function(){
+				   if(oReq.readyState == 4)
+				   {
+					  
+					   var data = eval(oReq.responseText);
+					   for(var i=0;i<data.length;i++){
+						  if(msgtext.value==data[i].Id){
+							  msgValue="중복된 ID입니다.";
+						  }
+					   }
+					   msg.innerText=msgValue;
+					     
+				   }
+				   
+			   }
+			   
+			   
+		      oReq.open("GET", "check.jsp", true);
+		      oReq.send();
+		    
+		    /*   console.log(oReq.statusText);  */
+		   } 
+		
+	}
+	}
+	
+	var nickMsg=document.querySelector("#nickname");
+	var nickText= document.querySelector("#nickName-text");
+	var nickBtncheck = document.querySelector("#main-join-button2");
+	nickBtncheck.onclick = function(){
+		if(nickText.value==""){
+			alert("입력된 값이 없습니다.");
+		}else{
+			var nickMsgValue="사용 가능한 닉네임 입니다."; 
+		 var oReq = new XMLHttpRequest();
+		   if (oReq) {
+			  
+			   oReq.onreadystatechange = function(){
+				   if(oReq.readyState == 4)
+				   {
+					  
+					   var data = eval(oReq.responseText);
+					   for(var i=0;i<data.length;i++){
+						  if(nickText.value==data[i].Nickname){
+							  nickMsgValue="중복된 닉네임입니다.";
+						  }
+					   }
+					   nickMsg.innerText=nickMsgValue;
+					     
+				   }
+				   
+			   }
+			   
+			   
+		      oReq.open("GET", "check.jsp", true);
+		      oReq.send();
+		    
+		   
+		   } 
+		
+	}
+	}
+}
+
+</script>
+ 
+
 </head>
 <body>
 
@@ -135,7 +200,7 @@
 			<div class="main-line"></div>
 
 			<div id="main-join">
-				<form action="joinProc.jsp" method="post">
+				<form action="joinProc.jsp" method="post" name="writeForm">
 					<fieldset>
 						<legend class="hidden">정보수정필드</legend>
 						<div class="clearfix">
@@ -146,10 +211,11 @@
 								title="아이디는 10자미만으로 입력 해 주세요."/>
 						<!-- 	<form id="main-join-button" action="checkIdProc.jsp" method="post"> -->
 							<!-- 	<input class="main-newline" type="submit" value="중복확인" /> -->
-							<p id="main-join-button" ><a class="main-newline" onclick="$(this).closest('form').submit()">중복확인</a></p> 
+						<!-- 	<p id="main-join-button" ><a class="main-newline" onclick="$(this).closest('form').submit()">중복확인</a></p>  -->
+					<p id="main-join-button" ><a class="main-newline" >중복확인</a></p>
 							
-						<div>
-							<span style="color: red;">${checkMsg}</span>
+						<div style="display:inline-block; float:left; margin-left:30px;">
+							<span id="msg" style="color: red;"></span>
 						</div> 
 						
 						<!-- 	</form> -->
@@ -178,20 +244,20 @@
 							<input id="main-join-text" type="text" name="rePw" />
 						</div>
 						<div>
-							<span style="color: red;">${msg}</span>
+							<span style="color: red;"></span>
 						</div>
 
 
 						<div class="clearfix">
-							<label id="main-join-title-aside" for="fam_name">성명 이름</label> 
+							<label id="main-join-title-aside" for="last_name">성명 이름</label> 
 							<label
-								id="main-join-title-gender" for="last_name">성</label> 
+								id="main-join-title-gender" for="fam_name">성</label> 
 								<!-- <label
 								id="main-join-title-gender2" for="gender">성별</label> -->
 						</div>
 						<div class="clearfix-same">
-							<input id="main-name-text" type="text" name="fam_name" /> <input
-								id="main-lastname-text" type="text" name="last_name" /> 
+							<input class="main-name-text" type="text" name="last_name" /> <input
+								id="main-lastname-text" type="text" name="fam_name" /> 
 								<!-- <select
 								id="main-join-button2" name="field">
 								<option>남자</option>
@@ -202,16 +268,18 @@
 
 
 						<div class="clearfix">
-							<label id="main-join-title-aside" for="nicname">닉네임</label>
+							<label id="main-join-title-aside" for="nickname">닉네임</label>
 						</div>
 						<div class="clearfix-same">
-							<input id="main-name-text" type="text" name="nicname" />
-							<p id="main-join-button">
-								<a class="main-newline" href="">중복확인</a>
-							</p>
+							<input id ="nickName-text"class="main-name-text" type="text" name="nickname" />
+							<p id="main-join-button2"><a class="main-newline">중복확인</a></p>
+								<div style="display:inline-block; float:left; margin-left:30px;">
+							<span id="nickname" style="color: red;"></span>
+						</div> 
+							
 						</div>
-
-
+						
+					
 
 						<div class="clearfix">
 							<label id="main-join-title-aside" for="birth">생년월일</label>

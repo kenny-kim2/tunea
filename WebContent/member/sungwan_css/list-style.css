@@ -526,7 +526,7 @@ margin-top:0px;
 
 #main-join-button2
 {   
-    float:left;
+   float:left;
     font-family: 맑은 고딕, 고딕, sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -535,7 +535,8 @@ margin-top:0px;
     border-radius:5px;
     margin-left:15px;
     padding:7px;
-      background:none;
+      background:#cbb48b;
+      cursor:pointer;
     /*background:#cbb48b;*/
 
 }
