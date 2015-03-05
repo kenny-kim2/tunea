@@ -1,9 +1,9 @@
-ï»¿
-/*--<ê³µí†µ ì˜ì—­>----------------------------------------------------------*/
+
+/*--<°øÅë ¿µ¿ª>----------------------------------------------------------*/
 
 body
 {
-    font-family:ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family:¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size : 12px;
     color: #979797;
     background:url("images/bg.jpg") no-repeat center;
@@ -25,7 +25,7 @@ a
     display:none;
 }
 
-/*--<í—¤ë” ì˜ì—­>----------------------------------------------------------*/
+/*--<Çì´õ ¿µ¿ª>----------------------------------------------------------*/
 
 #member-menu
 {
@@ -47,7 +47,7 @@ a
 
 .member-menu-item-text
 {
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold; 
     color: #ffffff;   
@@ -58,7 +58,7 @@ a
     text-decoration:underline;
 }
 
-/*--<ë©”ì¸ ë©”ë‰´ ì˜ì—­>----------------------------------------------------------*/
+/*--<¸ŞÀÎ ¸Ş´º ¿µ¿ª>----------------------------------------------------------*/
 
 #main-menu-list
 {    
@@ -86,7 +86,7 @@ a
 
 .main-menu-item-text
 {
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size:20px;
     font-weight: bold;
     color: #cbb48b;  
@@ -97,12 +97,12 @@ a
     text-decoration:underline;
 }
 
-/*--<ë°”ë”” ì˜ì—­>----------------------------------------------------------*/
+/*--<¹Ùµğ ¿µ¿ª>----------------------------------------------------------*/
 
 
 #sub-menu-title 
 {
-    font-family: NanumGothic, ë§‘ì€ ê³ ë”•, sans-serif;
+    font-family: NanumGothic, ¸¼Àº °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold; 
     color: #313131;
@@ -132,7 +132,7 @@ a
 
 .sub-menu-item-text
 {           
-    font-family: NanumGothic, ë§‘ì€ ê³ ë”•, sans-serif;
+    font-family: NanumGothic, ¸¼Àº °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold; 
     color: #8e6844;    
@@ -145,14 +145,14 @@ a
 
 #main-title
 {
-    /*font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    /*font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size:30px;
     font-weight: bold;
     color: #313131; 
     margin-top:30px;
     text-align:center;*/
 
-      font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+      font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size:20px;
     font-weight: bold;
     color: #313131; 
@@ -239,7 +239,7 @@ a
 }
 /*.request-item a
 {
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
@@ -247,7 +247,7 @@ a
   
 }*/
 
-/*--<í’‹í„° ì˜ì—­>--------------------------------------------------------*/
+/*--<Ç²ÅÍ ¿µ¿ª>--------------------------------------------------------*/
 
 #footer
 {
@@ -271,12 +271,12 @@ a
     padding-left:0px;
     background:none;
 }
-/*--------------------------------------------------ë©”ì¸ í…Œì´ë¸”ì„¤ì •*/
+/*--------------------------------------------------¸ŞÀÎ Å×ÀÌºí¼³Á¤*/
 
 
 #message-option
 {
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     height:30px;
@@ -319,7 +319,7 @@ a
 .request-item 
 {
      /*float:left;
-     font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+     font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
@@ -330,7 +330,7 @@ a
     padding:7px;*/
 
        float:left;
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 15px;
     font-weight: bold;
     /*color: white;*/
@@ -345,7 +345,7 @@ a
 }
 
 
-/*===============list_íšŒì›íƒˆí‡´======================*/
+/*===============list_È¸¿øÅ»Åğ======================*/
 
 #main-form
 {
@@ -358,7 +358,7 @@ a
 
 #info-edit
 {
-      font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+      font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
@@ -379,7 +379,7 @@ a
 .info-edit-button
 {   
     float:left;
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #313131;
@@ -391,7 +391,7 @@ a
 
 }
 
-/*=================================íšŒì›ê°€ì…======================*/
+/*=================================È¸¿ø°¡ÀÔ======================*/
 
 #main-join 
 {
@@ -406,7 +406,7 @@ margin-top:100px;
 }
 #main-join-title
 {
-      font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+      font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
@@ -420,7 +420,7 @@ margin-top:100px;
 
 #main-join-title-gender
 {
-      font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+      font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
@@ -464,7 +464,7 @@ margin-top:100px;
 #main-join-button
 {   
     float:left;
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #313131;
@@ -473,7 +473,6 @@ margin-top:100px;
     border-radius:6px;
     margin-left:20px;
     padding:7px;
-
 }
 
 .main-newline
@@ -487,7 +486,7 @@ margin-top:100px;
 {
     
     float:left;
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 30px;
     font-weight: bold;
     color: #313131;
@@ -498,7 +497,7 @@ margin-top:100px;
     padding:7px;
 }
 
-/*==============================ì˜¤ì¼€ìŠ¤íŠ¸ë¼ ë“±ë¡í˜ì´ì§€========*/
+/*==============================¿ÀÄÉ½ºÆ®¶ó µî·ÏÆäÀÌÁö========*/
 
 
 
@@ -506,7 +505,7 @@ margin-top:100px;
 {
     padding-left:20px;
     padding-right:20px;
-       font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+       font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 30px;
     font-weight: bold;
     color: #313131;
@@ -518,7 +517,7 @@ margin-top:100px;
 #orch-welcome
 {
     padding-top:10px;
-       font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+       font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
@@ -545,7 +544,7 @@ margin-top:100px;
     text-align:center;
    padding-top:10px;
      float:left;
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 30px;
     font-weight: bold;
     color: #313131;
@@ -563,7 +562,7 @@ margin-top:100px;
     padding-left:0px;
     background:none;
 }
-/*======================================ë¡œê·¸ì¸==================================*/
+/*======================================·Î±×ÀÎ==================================*/
 
 #main-login
 {
@@ -579,7 +578,7 @@ margin-top:100px;
 
 #login-title
 {
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
@@ -603,7 +602,7 @@ margin-top:100px;
 {
 
      float:left;
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #313131;
@@ -622,7 +621,7 @@ margin-top:100px;
 #login-option-button
 {
      float:left;
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #313131;
@@ -633,11 +632,11 @@ margin-top:100px;
     padding:7px;
 }
 
-/*============================================ë§ˆì´í˜ì´ì§€ ì ‘ì†=========================*/
+/*============================================¸¶ÀÌÆäÀÌÁö Á¢¼Ó=========================*/
 
 #mypage-join
 {
-      font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+      font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
@@ -659,7 +658,7 @@ margin-top:100px;
 .mypage-join-button
 {   
     float:left;
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #313131;
@@ -671,7 +670,7 @@ margin-top:100px;
   
 }
 
-/*================================PW/IDì°¾ê¸° í˜ì´ì§€===========================*/
+/*================================PW/IDÃ£±â ÆäÀÌÁö===========================*/
 
 
 #idpwsearch
@@ -696,7 +695,7 @@ margin-top:100px;
 
 #id-search-title
 {
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #313131;
@@ -722,7 +721,7 @@ margin-top:100px;
 {
 
      float:left;
-    font-family: ë§‘ì€ ê³ ë”•, ê³ ë”•, sans-serif;
+    font-family: ¸¼Àº °íµñ, °íµñ, sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #313131;

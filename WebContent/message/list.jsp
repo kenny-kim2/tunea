@@ -71,17 +71,33 @@
   
    
 
-    <div id="quick" style="position:absolute; z-index:2;top:0;left:1300px;width:150px;height:200px;">
-        <div id="clickme" style="text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:15px;font-weight: bold; color: #313131;cursor:pointer;">▽Quick Menu▽</div>
-        <div id="quickmenu" class="hidden" style="border:2px solid #cbb48b; border-radius:5px; background:white !important;">
-            <div style="padding-top:10px; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:20px;font-weight: bold; color: #313131; ">퀵메뉴</div>
-            <div style="padding-top:20px; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:12px;font-weight: bold; color: #313131;">동영상</div>
-            <div style="padding-top:10px; text-align:center; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:12px;font-weight: bold; color: #313131;">오케스트라</div>
-            <div style="padding-top:10px; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:12px;font-weight: bold; color: #313131;">커뮤니티</div>
-            <div style="padding-top:10px; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:12px;font-weight: bold; color: #313131;">콘서트</div>
-
-            <div style="padding-top:10px; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:12px;font-weight: bold; color: #313131;"><a href="#top">▲맨위로</a></div>
-            <div style="padding-top:5px; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:12px;font-weight: bold; color: #313131;"><a onclick="window.scrollTo(0,document.body.scrollHeight);" style="cursor:pointer;">▼맨아래로</a></div>
+    <div id="quick" style="position:absolute; z-index:2;top:0;left:1300px;width:70px; height:350px;">
+        <div class="clickme" style="text-align:center; cursor:pointer; ">
+        <img style="cursor:pointer; " src="images/btn-quick-menu.png"/>
+        </div> 
+        <div id="quickmenu" style="border:1px solid #cbb48b; border-radius:5px; background:white !important;">
+            <!-- <div style="padding-top:10px; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:20px;font-weight: bold; color: #313131; ">퀵메뉴</div> -->
+          <div style="margin-top:17px; text-align:center;">
+          <!-- <img style="cursor:pointer;" src="images/btn-quick-menu.png"/> -->
+          </div>
+        <!--      <div style="margin-top:17px; width:50px; margin-left:10px; background:#cbb48b; height:1px;"></div> -->
+          <div style="margin-top:14px; text-align:center;"><img style="cursor:pointer;" src="images/btn-quick-orchestra.png"/></div>
+           <div style="margin-top:14px; width:50px;  margin-left:10px; background:#cbb48b; height:1px;"></div>
+           <div style="margin-top:14px; text-align:center;"><img style="cursor:pointer;" src="images/btn-quick-concert.png"/></div>
+           <div style="margin-top:14px; width:50px;  margin-left:10px; background:#cbb48b; height:1px;"></div>
+            <div style="margin-top:20px; text-align:center;"><img style="cursor:pointer;" src="images/btn-quick-video.png"/></div>
+           <div style="margin-top:20px; width:50px;  margin-left:10px; background:#cbb48b; height:1px;"></div>
+           <div style="margin-top:20px; text-align:center;"><img style="cursor:pointer;" src="images/btn-quick-board.png"/></div>
+           <div style="margin-top:20px; width:50px;  margin-left:10px; background:#cbb48b; height:1px;"></div>
+           
+            <div style="margin-top:26px; text-align:center;">
+            <a href="#top"><img src="images/btn-quick-up.png"/></a>
+            <img style="cursor:pointer;" onclick="window.scrollTo(0,document.body.scrollHeight);" src="images/btn-quick-down.png"/>
+            
+            </div>
+             <div style="margin-top:27px;"></div>
+           <!--  <div style="padding-top:10px; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:12px;font-weight: bold; color: #313131;"><a href="#top">▲맨위로</a></div>
+            <div style="padding-top:5px; text-align:center; font-family: 맑은 고딕, 고딕, sans-serif; font-size:12px;font-weight: bold; color: #313131;"><a onclick="window.scrollTo(0,document.body.scrollHeight);" style="cursor:pointer;">▼맨아래로</a></div> -->
         </div>
     </div>
 
@@ -121,7 +137,7 @@
 
         </script>
         <script type="text/javascript">
-            $("#clickme").click(function () {
+            $(".clickme").click(function () {
 
                 $("#quickmenu").animate({
 
